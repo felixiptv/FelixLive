@@ -1,0 +1,94 @@
+name: PPV Stream Fetcher
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # hourly (UTC); change as needed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-streams:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+        fetch-depth: 0
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt || true
+        # if your script needs playwright, uncomment:
+        # pip install aiohttp playwright
+        # playwright install
+        # playwright install-deps
+
+    - name: 🔐 Decode PPV script from secret
+      env:
+        PPV_PY_B64: ${{ secrets.PPV_PY_B64 }}
+      run: |
+        if [ -z "$PPV_PY_B64" ]; then
+          echo "PPV_PY_B64 secret is empty" && exit 1
+        fi
+        echo "$PPV_PY_B64" | base64 --decode > ppv.py
+        chmod +x ppv.py
+        ls -l ppv.py
+        head -n 5 ppv.py || true
+
+    - name: ▶️ Run PPV script
+      run: python ppv.py
+
+    - name: 🧪 Show status & diff
+      run: |
+        git status --porcelain
+        git diff -- PPVLand.m3u8 || true
+
+    - name: 💾 Commit changes
+      if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.name  "github-actions[bot]"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add PPVLand.m3u8 || true
+        if ! git diff --staged --quiet; then
+          git commit -m "Update PPV streams [skip ci]" || true
+          git push
+        else
+          echo "No changes to commit"
+        fi
+
+    - name: ☁️ Upload to Cloudflare KV
+      if: success()
+      env:
+        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        CF_NAMESPACE_ID: ${{ secrets.CF_NAMESPACE_ID }}
+      run: |
+        if [ ! -f PPVLand.m3u8 ]; then
+          echo "PPVLand.m3u8 not found, skipping Cloudflare upload." && exit 0
+        fi
+
+        # Upload to KV
+        curl -s -X PUT "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/storage/kv/namespaces/${CF_NAMESPACE_ID}/values/PPVLand.m3u8" \
+          -H "Authorization: Bearer ${CF_API_TOKEN}" \
+          -H "Content-Type: text/plain" \
+          --data-binary "@PPVLand.m3u8" \
+          | jq .
+
+    - name: 📦 Upload playlist artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: PPVLand.m3u8
+        path: PPVLand.m3u8
