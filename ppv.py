@@ -86,8 +86,9 @@ COLLEGE_TEAMS = {
     "maryland terrapins", "rutgers scarlet knights", "nebraska cornhuskers", "purdue boilermakers",
     "texas a&m aggies", "kentucky wildcats", "missouri tigers", "vanderbilt commodores",
     "houston cougars", "utah utes", "byu cougars", "boise state broncos", "san diego state aztecs",
-    "cincinnati bearcats", "memphis tigers", "ucf knights", "usf bulls", "smu mustangs",
-    "tulsa golden hurricane", "tulane green wave", "navy midshipmen", "army black knights"
+    "cincinnati bearcats", "memphis tigers", "ucf knights", "south florida bulls", "smu mustangs",
+    "tulsa golden hurricane", "tulane green wave", "navy midshipmen", "army black knights",
+    "arizona state sun devils", "texas tech red raiders", "florida atlantic owls"
 }
 
 # --- CORRECTED FUNCTION #1 ---
