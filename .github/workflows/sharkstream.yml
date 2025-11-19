@@ -1,0 +1,42 @@
+name: SharkStreams Playlist Updater
+
+# Run every hour; adjust as needed
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:  # allows manual run
+
+jobs:
+  update_playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright aiohttp beautifulsoup4
+
+          # Install browsers for Playwright
+          playwright install
+
+      - name: Run SharkStreams scraper
+        run: |
+          python sharkstreams_scraper.py  # replace with your script filename
+
+      - name: Commit updated playlist
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add *.m3u8
+          git commit -m "Update SharkStreams playlist" || echo "No changes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
