@@ -27,7 +27,7 @@ jobs:
         run: pip install requests
 
       - name: 🎯 Run scraping script
-        run: python japan.py
+        run: python blurred.py
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
