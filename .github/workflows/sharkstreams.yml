@@ -10,12 +10,6 @@ jobs:
     name: Fetch SharkStreams Playlist
     runs-on: ubuntu-latest
 
-    # B: Auto-Retry System (retry job 2 times if it fails)
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      retry: 2
-
     steps:
       # 1. Checkout
       - name: Checkout Repo
