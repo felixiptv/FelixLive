@@ -9,87 +9,61 @@ CUSTOM_HEADERS = [
     '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0',
 ]
 
-# Replace with the SharkStreams pages you want to scrape
-SHARKSTREAMS_PAGES = [
-    "https://sharkstreams.net"  # You can add more URLs here
-]
-
-# Domains commonly used for actual video streams
-VALID_EMBED_DOMAINS = [
-    "doodstream.com", "streamtape.com", "rapidvideo.com",
-    "streamwish.com", "vidstream.pro", "mp4upload.com"
-]
+SHARKSTREAMS_MAIN = "https://sharkstreams.net"
 
 # --- UTIL FUNCTIONS ---
-async def check_m3u8_url(url, referer):
-    """Check if an M3U8 URL is valid."""
+async def check_m3u8(url, referer):
+    headers = {"Referer": referer, "User-Agent": "Mozilla/5.0"}
     try:
-        origin = "https://" + referer.split('/')[2]
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0",
-            "Referer": referer,
-            "Origin": origin
-        }
-        timeout = aiohttp.ClientTimeout(total=15)
-        async with aiohttp.ClientSession(timeout=timeout) as session:
+        async with aiohttp.ClientSession() as session:
             async with session.get(url, headers=headers) as resp:
                 return resp.status in [200, 403]
-    except Exception as e:
-        print(f"❌ Error checking {url}: {e}")
+    except:
         return False
 
 # --- PLAYWRIGHT FUNCTIONS ---
-async def grab_m3u8_from_iframe(page, iframe_url, depth=0):
-    """Open iframe and capture m3u8 streams, handling nested iframes recursively."""
-    if depth > 3:  # Prevent infinite nesting
-        return set()
-    
-    found_streams = set()
+async def get_m3u8_from_player(player_url):
+    """Open player.php URL and capture m3u8 streams."""
+    streams = set()
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
 
-    def handle_response(response):
-        if ".m3u8" in response.url:
-            print(f"✅ Found M3U8 Stream: {response.url}")
-            found_streams.add(response.url)
+        def handle_response(response):
+            if ".m3u8" in response.url:
+                print("✅ Found M3U8:", response.url)
+                streams.add(response.url)
 
-    page.on("response", handle_response)
-    print(f"🌐 Navigating to iframe (depth {depth}): {iframe_url}")
-    try:
-        await page.goto(iframe_url, timeout=30000, wait_until="domcontentloaded")
-    except Exception as e:
-        print(f"❌ Failed to load iframe page: {e}")
-        page.remove_listener("response", handle_response)
-        return set()
-
-    # Wait a few seconds for JS to generate streams
-    await asyncio.sleep(6)
-
-    # Check for nested iframes
-    nested_iframes = await page.locator("iframe").all()
-    for nested in nested_iframes:
-        src = await nested.get_attribute("src")
-        width = await nested.get_attribute("width") or "0"
-        height = await nested.get_attribute("height") or "0"
-        if not src or width == "0" or height == "0":
-            continue
-        if any(domain in src for domain in VALID_EMBED_DOMAINS):
-            nested_streams = await grab_m3u8_from_iframe(page, src, depth=depth+1)
-            found_streams.update(nested_streams)
-
-    page.remove_listener("response", handle_response)
-
-    if not found_streams:
-        print(f"❌ No M3U8 URLs captured for {iframe_url}")
-        return set()
+        page.on("response", handle_response)
+        await page.goto(player_url, wait_until="domcontentloaded")
+        await asyncio.sleep(6)  # wait for player to request m3u8
+        await browser.close()
 
     # Validate URLs
-    tasks = [check_m3u8_url(url, iframe_url) for url in found_streams]
-    results = await asyncio.gather(*tasks)
-    valid_urls = {url for url, ok in zip(found_streams, results) if ok}
+    valid_urls = []
+    for url in streams:
+        if await check_m3u8(url, player_url):
+            valid_urls.append(url)
     return valid_urls
+
+# --- SCRAPE MAIN PAGE ---
+async def get_all_player_urls():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(SHARKSTREAMS_MAIN) as resp:
+            html = await resp.text()
+    soup = BeautifulSoup(html, "html.parser")
+    links = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "player.php?channel=" in href:
+            full_url = SHARKSTREAMS_MAIN.rstrip("/") + "/" + href.lstrip("/")
+            links.append(full_url)
+    print(f"Found {len(links)} player URLs")
+    return links
 
 # --- BUILD PLAYLIST ---
 def build_m3u(streams):
-    lines = ['#EXTM3U']
+    lines = ["#EXTM3U"]
     for s in streams:
         urls = s.get("urls", [])
         if not urls:
@@ -101,46 +75,25 @@ def build_m3u(streams):
 
 # --- MAIN ---
 async def main():
+    player_urls = await get_all_player_urls()
     all_streams = []
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context()
-        page = await context.new_page()
 
-        for url in SHARKSTREAMS_PAGES:
-            print(f"\n🔎 Processing page: {url}")
-            try:
-                await page.goto(url, timeout=30000)
-                iframes = await page.locator("iframe").all()
-                iframe_url = None
-                for i in iframes:
-                    src = await i.get_attribute("src")
-                    width = await i.get_attribute("width") or "0"
-                    height = await i.get_attribute("height") or "0"
-                    if not src or width == "0" or height == "0":
-                        continue
-                    if any(domain in src for domain in VALID_EMBED_DOMAINS):
-                        iframe_url = src
-                        break
-                if iframe_url:
-                    urls = await grab_m3u8_from_iframe(page, iframe_url)
-                    all_streams.append({
-                        "name": url.split("/")[-1] or "SharkStreams",
-                        "urls": list(urls)
-                    })
-                else:
-                    print("⚠️ No valid iframe found on this page")
-            except Exception as e:
-                print(f"❌ Failed processing {url}: {e}")
+    for idx, player_url in enumerate(player_urls, start=1):
+        print(f"\n🔎 Processing {idx}/{len(player_urls)}: {player_url}")
+        urls = await get_m3u8_from_player(player_url)
+        if urls:
+            all_streams.append({
+                "name": player_url.split("=")[-1],
+                "urls": urls
+            })
+        else:
+            print(f"⚠️ No valid stream found for {player_url}")
 
-        await browser.close()
-
-    # Build M3U playlist
     playlist = build_m3u(all_streams)
-    filename = f"SharkStreams_{datetime.utcnow().strftime('%Y%m%d%H%M')}.m3u8"
+    filename = f"SharkStreams_All_{datetime.utcnow().strftime('%Y%m%d%H%M')}.m3u8"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(playlist)
-    print(f"✅ Playlist saved as {filename}")
+    print(f"\n✅ Playlist saved as {filename}")
 
 if __name__ == "__main__":
     asyncio.run(main())
