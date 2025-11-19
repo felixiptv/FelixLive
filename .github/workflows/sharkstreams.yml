@@ -1,42 +1,54 @@
-name: 🚀 SharkStreams Playlist Updater 📺
+name: 🚀 Update SharkStreams Playlist 📺
 
-# Run every hour; adjust as needed
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:  # allows manual run
+    - cron: '*/30 * * * *'  # ⏰ Run every 35 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Needed for committing back to repo
 
 jobs:
-  update_playlist:
+  scrape:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python
+      - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install dependencies
+      - name: 📦 Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright aiohttp beautifulsoup4
+          pip install aiohttp beautifulsoup4
 
-          # Install browsers for Playwright
-          playwright install
+      - name: 🎯 Run SharkStreams scraping script
+        run: python sharkstreams.py  # replace with your script filename
 
-      - name: Run SharkStreams scraper
+      - name: 💾 Commit & Push if Playlist Changed
         run: |
-          python sharkstreams.py  # replace with your script filename
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit updated playlist
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add *.m3u8
-          git commit -m "Update SharkStreams playlist" || echo "No changes"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Stage the output
+          git add SharkStreams_All_*.m3u8
+
+          # Check if file actually changed
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "🔁 Update SharkStreams playlist $(date -u +'%a %b %d %T UTC %Y')"
+
+          # Small random delay to reduce push collisions
+          sleep $((RANDOM % 10 + 5))
+
+          # Push to the same repo using default GITHUB_TOKEN
+          git push origin main
