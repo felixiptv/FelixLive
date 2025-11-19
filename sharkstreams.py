@@ -1,6 +1,5 @@
 import asyncio
-import aiohttp
-from bs4 import BeautifulSoup
+from playwright.async_api import async_playwright
 from datetime import datetime
 
 SHARKSTREAMS_MAIN = "https://sharkstreams.net"
@@ -8,34 +7,45 @@ CUSTOM_HEADERS = [
     '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0',
 ]
 
-async def fetch_channel_ids():
-    """Scrape the main page to get all channel IDs dynamically."""
-    async with aiohttp.ClientSession() as session:
-        async with session.get(SHARKSTREAMS_MAIN) as resp:
-            html = await resp.text()
+async def get_player_urls():
+    """Use Playwright to extract all player.php URLs from SharkStreams main page."""
+    urls = []
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto(SHARKSTREAMS_MAIN, wait_until="networkidle")
+        await asyncio.sleep(5)  # wait for JS to render channels
+        anchors = await page.query_selector_all("a[href*='player.php?channel=']")
+        for a in anchors:
+            href = await a.get_attribute("href")
+            if href:
+                full_url = SHARKSTREAMS_MAIN.rstrip("/") + "/" + href.lstrip("/")
+                urls.append(full_url)
+        await browser.close()
+    print(f"Found {len(urls)} player URLs")
+    return urls
 
-    soup = BeautifulSoup(html, "html.parser")
-    channel_ids = set()
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "player.php?channel=" in href:
-            cid = href.split("channel=")[-1]
-            channel_ids.add(cid)
-    print(f"Found {len(channel_ids)} channel IDs")
-    return sorted(channel_ids, key=int)
+async def get_m3u8_from_player(player_url):
+    """Open a player URL and capture m3u8 streams dynamically."""
+    streams = set()
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
 
-async def get_m3u8_urls(channel_id):
-    """Call get-stream.php to retrieve actual .m3u8 URLs for a channel."""
-    url = f"{SHARKSTREAMS_MAIN}/get-stream.php?channel={channel_id}"
-    headers = {"User-Agent": "Mozilla/5.0"}
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, headers=headers) as resp:
-            text = await resp.text()
-            urls = [line.strip() for line in text.splitlines() if ".m3u8" in line]
-            return urls
+        # Intercept responses to capture .m3u8 URLs
+        def handle_response(response):
+            if ".m3u8" in response.url:
+                print("✅ Found M3U8:", response.url)
+                streams.add(response.url)
+
+        page.on("response", handle_response)
+        await page.goto(player_url, wait_until="networkidle")
+        await asyncio.sleep(6)  # wait for player requests to fire
+        await browser.close()
+    return list(streams)
 
 def build_m3u(channels):
-    """Build an M3U playlist from the captured streams."""
+    """Build M3U playlist from captured streams."""
     lines = ["#EXTM3U"]
     for ch in channels:
         name = f"Channel_{ch['id']}"
@@ -48,18 +58,20 @@ def build_m3u(channels):
     return "\n".join(lines)
 
 async def main():
-    channel_ids = await fetch_channel_ids()
+    player_urls = await get_player_urls()
     all_channels = []
 
-    for idx, cid in enumerate(channel_ids, start=1):
-        print(f"\n🔎 Fetching streams for channel {cid} ({idx}/{len(channel_ids)})")
-        urls = await get_m3u8_urls(cid)
-        if urls:
-            print(f"✅ Found {len(urls)} streams for channel {cid}")
-            all_channels.append({"id": cid, "urls": urls})
+    for idx, url in enumerate(player_urls, start=1):
+        channel_id = url.split("channel=")[-1]
+        print(f"\n🔎 Processing channel {channel_id} ({idx}/{len(player_urls)})")
+        m3u8_urls = await get_m3u8_from_player(url)
+        if m3u8_urls:
+            all_channels.append({"id": channel_id, "urls": m3u8_urls})
+            print(f"✅ Found {len(m3u8_urls)} streams for channel {channel_id}")
         else:
-            print(f"⚠️ No streams found for channel {cid}")
+            print(f"⚠️ No streams found for channel {channel_id}")
 
+    # Build playlist
     playlist = build_m3u(all_channels)
     filename = f"SharkStreams_All_{datetime.utcnow().strftime('%Y%m%d%H%M')}.m3u8"
     with open(filename, "w", encoding="utf-8") as f:
