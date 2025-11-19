@@ -4,6 +4,8 @@ from datetime import datetime
 
 SHARKSTREAMS_MAIN = "https://sharkstreams.net"
 CUSTOM_HEADERS = [
+    '#EXTVLCOPT:http-origin=https://sharkstreams.net',
+    '#EXTVLCOPT:http-referrer=https://sharkstreams.net/',
     '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0',
 ]
 
