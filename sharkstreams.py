@@ -11,7 +11,7 @@ CUSTOM_HEADERS = [
 
 # Replace with the pages you want to scrape
 SHARKSTREAMS_PAGES = [
-    "https://sharkstreams.net/live/some-match-page"
+    "https://sharkstreams.net"
 ]
 
 # --- UTIL FUNCTIONS ---
