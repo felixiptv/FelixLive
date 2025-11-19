@@ -2,11 +2,11 @@ name: 🚀 Update SharkStreams Playlist 📺
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # ⏰ Run every 35 minutes
+    - cron: '*/35 * * * *'  # every 35 minutes
   workflow_dispatch:
 
 permissions:
-  contents: write  # Needed for committing back to repo
+  contents: write
 
 jobs:
   scrape:
@@ -15,40 +15,32 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: 📦 Install Python dependencies
+      - name: 📦 Install dependencies & Playwright
         run: |
           python -m pip install --upgrade pip
-          pip install aiohttp beautifulsoup4
+          pip install aiohttp beautifulsoup4 playwright
+          playwright install
+          playwright install-deps
 
       - name: 🎯 Run SharkStreams scraping script
-        run: python sharkstreams.py  # replace with your script filename
+        run: python sharkstreams.py
 
       - name: 💾 Commit & Push if Playlist Changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage the output
           git add SharkStreams_All_*.m3u8
-
-          # Check if file actually changed
           if git diff --cached --quiet; then
             echo "✅ No changes to commit"
             exit 0
           fi
 
           git commit -m "🔁 Update SharkStreams playlist $(date -u +'%a %b %d %T UTC %Y')"
-
-          # Small random delay to reduce push collisions
-          sleep $((RANDOM % 10 + 5))
-
-          # Push to the same repo using default GITHUB_TOKEN
           git push origin main
