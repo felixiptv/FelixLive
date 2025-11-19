@@ -9,9 +9,15 @@ CUSTOM_HEADERS = [
     '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0',
 ]
 
-# Replace with the pages you want to scrape
+# Replace with the SharkStreams pages you want to scrape
 SHARKSTREAMS_PAGES = [
-    "https://sharkstreams.net"
+    "https://sharkstreams.net"  # You can add more URLs here
+]
+
+# Domains commonly used for actual video streams
+VALID_EMBED_DOMAINS = [
+    "doodstream.com", "streamtape.com", "rapidvideo.com",
+    "streamwish.com", "vidstream.pro", "mp4upload.com"
 ]
 
 # --- UTIL FUNCTIONS ---
@@ -33,8 +39,11 @@ async def check_m3u8_url(url, referer):
         return False
 
 # --- PLAYWRIGHT FUNCTIONS ---
-async def grab_m3u8_from_iframe(page, iframe_url):
-    """Open iframe and capture m3u8 streams."""
+async def grab_m3u8_from_iframe(page, iframe_url, depth=0):
+    """Open iframe and capture m3u8 streams, handling nested iframes recursively."""
+    if depth > 3:  # Prevent infinite nesting
+        return set()
+    
     found_streams = set()
 
     def handle_response(response):
@@ -43,7 +52,7 @@ async def grab_m3u8_from_iframe(page, iframe_url):
             found_streams.add(response.url)
 
     page.on("response", handle_response)
-    print(f"🌐 Navigating to iframe: {iframe_url}")
+    print(f"🌐 Navigating to iframe (depth {depth}): {iframe_url}")
     try:
         await page.goto(iframe_url, timeout=30000, wait_until="domcontentloaded")
     except Exception as e:
@@ -54,13 +63,17 @@ async def grab_m3u8_from_iframe(page, iframe_url):
     # Wait a few seconds for JS to generate streams
     await asyncio.sleep(6)
 
-    # Check for nested iframe
-    nested_iframe = page.locator("iframe")
-    if await nested_iframe.count() > 0:
-        print("🔎 Found nested iframe, navigating into it...")
-        nested_url = await nested_iframe.first.get_attribute("src")
-        if nested_url:
-            await grab_m3u8_from_iframe(page, nested_url)
+    # Check for nested iframes
+    nested_iframes = await page.locator("iframe").all()
+    for nested in nested_iframes:
+        src = await nested.get_attribute("src")
+        width = await nested.get_attribute("width") or "0"
+        height = await nested.get_attribute("height") or "0"
+        if not src or width == "0" or height == "0":
+            continue
+        if any(domain in src for domain in VALID_EMBED_DOMAINS):
+            nested_streams = await grab_m3u8_from_iframe(page, src, depth=depth+1)
+            found_streams.update(nested_streams)
 
     page.remove_listener("response", handle_response)
 
@@ -98,14 +111,25 @@ async def main():
             print(f"\n🔎 Processing page: {url}")
             try:
                 await page.goto(url, timeout=30000)
-                await page.wait_for_selector("iframe", timeout=10000)
-                iframe_url = await page.locator("iframe").first.get_attribute("src")
+                iframes = await page.locator("iframe").all()
+                iframe_url = None
+                for i in iframes:
+                    src = await i.get_attribute("src")
+                    width = await i.get_attribute("width") or "0"
+                    height = await i.get_attribute("height") or "0"
+                    if not src or width == "0" or height == "0":
+                        continue
+                    if any(domain in src for domain in VALID_EMBED_DOMAINS):
+                        iframe_url = src
+                        break
                 if iframe_url:
                     urls = await grab_m3u8_from_iframe(page, iframe_url)
                     all_streams.append({
-                        "name": url.split("/")[-1],
+                        "name": url.split("/")[-1] or "SharkStreams",
                         "urls": list(urls)
                     })
+                else:
+                    print("⚠️ No valid iframe found on this page")
             except Exception as e:
                 print(f"❌ Failed processing {url}: {e}")
 
