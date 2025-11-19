@@ -3,15 +3,21 @@ name: 🚀 Update SharkStreams Playlist 📺
 on:
   schedule:
     - cron: '0 * * * *'     # Every hour
-  workflow_dispatch:         # Manual trigger
+  workflow_dispatch:
 
 jobs:
   scrape:
     name: Fetch SharkStreams Playlist
     runs-on: ubuntu-latest
 
+    # B: Auto-Retry System (retry job 2 times if it fails)
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      retry: 2
+
     steps:
-      # 1. Pull repo
+      # 1. Checkout
       - name: Checkout Repo
         uses: actions/checkout@v3
         with:
@@ -34,16 +40,24 @@ jobs:
       - name: Run SharkStreams Scraper
         run: python sharkstreams.py
 
-      # 5. Commit and push updated playlist
+      # 5. Commit & Push
       - name: Commit & Push Playlist
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet SharkStreams.m3u8; then
+          git add Sharkstreams.m3u8 || true
+
+          if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git add SharkStreams.m3u8
             git commit -m "🔁 Update playlist $(date -u +'%a %b %d %T UTC %Y')"
             git push
           fi
+
+      # A: Error notification step — runs *only when failure happens*
+      - name: ❌ Report Failure
+        if: failure()
+        run: |
+          echo "❌ SharkStreams scraper FAILED!"
+          echo "Check logs above for details."
