@@ -29,7 +29,7 @@ jobs:
 
       - name: Run SharkStreams scraper
         run: |
-          python sharkstreams_scraper.py  # replace with your script filename
+          python sharkstreams.py  # replace with your script filename
 
       - name: Commit updated playlist
         run: |
