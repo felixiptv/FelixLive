@@ -75,7 +75,7 @@ async def main():
 
     # Build playlist
     playlist = build_m3u(all_channels)
-    filename = f"SharkStreams_All_{datetime.utcnow().strftime('%Y%m%d%H%M')}.m3u8"
+    filename = f"SharkStreams.m3u8"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(playlist)
     print(f"\n✅ Playlist saved as {filename}")
