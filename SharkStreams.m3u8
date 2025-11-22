@@ -6,8 +6,22 @@ https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1763828875&token=812119
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Houston Texans vs Buffalo Bills" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Houston Texans vs Buffalo Bills
 https://cdn1.apkfiles.top/live/cdn1/playlist.m3u8?expires=1763826008&token=068467c28f5cbd06031cba3003e7a88dd8d38cfd317ede2d9634b1d0fb91658c
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC Fight Night: Tsarukyan vs. Hooker (Nov 22 - 11:00 AM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC Fight Night: Tsarukyan vs. Hooker (Nov 22 - 11:00 AM ET)
-https://cdn2.apkcdn.life/live/cdn2/playlist.m3u8?expires=1763825261&token=0aa2da957b33f4cea04d8ea09eb0ca8a46ce7f157323b8f43201e6224e44f7c9
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763825261&token=f0fcb44e58c911627f620b5f0038abc9e3e5944961db672dc22149c80c02618f
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="OKTAGON 80 (Nov 22 - 12:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",OKTAGON 80 (Nov 22 - 12:00 PM ET)
+https://cdn13.apkcdn.life/live/cdn13/playlist.m3u8?expires=1763828877&token=2a5b569138b828843cfa450fdae1cec5cbaf78aa28bf7f52100390a33d7f9dfc
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Charlotte Hornets (Nov 22 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Charlotte Hornets (Nov 22 - 01:00 PM ET)
+https://cdn5.apkcdn.life/live/cdn5/playlist.m3u8?expires=1763828882&token=017e0acfa9c4de7c7dfc09cec0afe4d2b0355dca7b3258d5774f908cc2e38855
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Benavidez vs. Yarde (Nov 22 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Benavidez vs. Yarde (Nov 22 - 03:00 PM ET)
 https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763825810&token=20887ac3255fc1cbf40b5d4e0a3927683b9dbc3c3f1304f3eb5c4c8f6cba9e06
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="New York Knicks vs Orlando Magic (Nov 22 - 05:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New York Knicks vs Orlando Magic (Nov 22 - 05:00 PM ET)
 https://cdn6.apkcdn.life/live/cdn6/playlist.m3u8?expires=1763826650&token=9292320c4c3e0e9b14e8c08d7a5f05410f1813ee1da6f297bce6921caabde441
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Atlanta Hawks vs New Orleans Pelicans (Nov 22 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Atlanta Hawks vs New Orleans Pelicans (Nov 22 - 07:00 PM ET)
+https://cdn7.apkcdn.life/live/cdn7/playlist.m3u8?expires=1763828888&token=3a5eaf99a0b2510b6337d23022ecf8001fe6ae033f91df3f5b655cebcffb5ec4
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Detroit Pistons vs Milwaukee Bucks (Nov 22 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Detroit Pistons vs Milwaukee Bucks (Nov 22 - 08:00 PM ET)
+https://cdn8.apkcdn.life/live/cdn8/playlist.m3u8?expires=1763828893&token=31d71dea549904b34f02241cb39c26e2f78673dcbe6626f6a0f484e2a44dfad4
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Washington Wizards vs Chicago Bulls (Nov 22 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Washington Wizards vs Chicago Bulls (Nov 22 - 08:00 PM ET)
+https://cdn9.apkcdn.life/live/cdn9/playlist.m3u8?expires=1763828899&token=86de2ed5836629b44060842c10a4ca6b9cad0d9d3945f0a73afc285eb6e94ab8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Memphis Grizzlies vs Dallas Mavericks (Nov 22 - 08:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Memphis Grizzlies vs Dallas Mavericks (Nov 22 - 08:30 PM ET)
+https://cdn10.apkcdn.life/live/cdn10/playlist.m3u8?expires=1763828904&token=b5a3e7fb1404589bacac03083d9326aa7b6cd1c702c002d877ef04915e78f31c
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Denver Nuggets (Nov 22 - 10:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Denver Nuggets (Nov 22 - 10:00 PM ET)
+https://cdn11.apkcdn.life/live/cdn11/playlist.m3u8?expires=1763828910&token=bc8390de5165f352e8228401211ee92f3f8798ce3e51225c879f7970507be471
