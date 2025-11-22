@@ -1,9 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn2.apkfiles.top/live/cdn2/playlist.m3u8?expires=1763825110&token=85b97feeab739098d6a107e8c20109c5b95e81cac0b76f019a1a894999727b8a
+https://cdn2.apkfiles.top/live/cdn2/playlist.m3u8?expires=1763825567&token=54fce9af122eb26f1c10978ed28813f9388cde156d40ae9f5b49c28158dd847b
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1763825112&token=e8e54b5a21e4b71cc1cebbb3118f816e945305c45925c6ff51e5af67a9c4f4f6
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1763828875&token=812119dee706428701f27fe41ccd6117672add8f40d7228374be7405f6caf2a3
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Houston Texans vs Buffalo Bills" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Houston Texans vs Buffalo Bills
+https://cdn1.apkfiles.top/live/cdn1/playlist.m3u8?expires=1763826008&token=068467c28f5cbd06031cba3003e7a88dd8d38cfd317ede2d9634b1d0fb91658c
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC Fight Night: Tsarukyan vs. Hooker (Nov 22 - 11:00 AM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC Fight Night: Tsarukyan vs. Hooker (Nov 22 - 11:00 AM ET)
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763824904&token=21c718cf9eb392d675b52317cf78e1dfcfce5a23fb71dc65b7cf0472794bafd5
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Denver Nuggets (Nov 22 - 10:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Denver Nuggets (Nov 22 - 10:00 PM ET)
-https://cdn11.apkcdn.life/live/cdn11/playlist.m3u8?expires=1763825161&token=3a2d8707dacf381d30091547315a942b1a76103c7c338827339ae107776ad141
+https://cdn2.apkcdn.life/live/cdn2/playlist.m3u8?expires=1763825261&token=0aa2da957b33f4cea04d8ea09eb0ca8a46ce7f157323b8f43201e6224e44f7c9
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Benavidez vs. Yarde (Nov 22 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Benavidez vs. Yarde (Nov 22 - 03:00 PM ET)
+https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763825810&token=20887ac3255fc1cbf40b5d4e0a3927683b9dbc3c3f1304f3eb5c4c8f6cba9e06
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="New York Knicks vs Orlando Magic (Nov 22 - 05:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New York Knicks vs Orlando Magic (Nov 22 - 05:00 PM ET)
+https://cdn6.apkcdn.life/live/cdn6/playlist.m3u8?expires=1763826650&token=9292320c4c3e0e9b14e8c08d7a5f05410f1813ee1da6f297bce6921caabde441
