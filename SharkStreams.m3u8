@@ -1,12 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn2.apkfiles.top/live/cdn2/playlist.m3u8?expires=1763876833&token=04e4d0f7a1f4d539366c58d5f04b99c63db1fd5c1ce05548a8898a45bfe717d9
+https://cdn2.apkfiles.top/live/cdn2/playlist.m3u8?expires=1763856241&token=1d636416c6dbc1920b47d69da66249792e642b3bed864098618e4ae19ef1a016
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
 https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1763860620&token=5f7d8955e63653a03dcd3c484023e40ba6433e7d91eaaf5eeb3c96576e7b9f69
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Houston Texans vs Buffalo Bills" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Houston Texans vs Buffalo Bills
 https://cdn2.apkfiles.top/live/cdn2/playlist.m3u8?expires=1763856383&token=be6829900a049f4b76d59d6f9723b7db2e6f0e8ad45333d6a04f57abf011d168
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC Fight Night: Tsarukyan vs. Hooker" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC Fight Night: Tsarukyan vs. Hooker
-https://cdn3.apkcdn.life/live/cdn3/playlist.m3u8?expires=1763856244&token=1cb51497a9609c8c2f6c64994814c15ee6fbe5f0517c0856ea557439471c5ad9
+https://cdn2.apkcdn.life/live/cdn2/playlist.m3u8?expires=1763856244&token=ab34b5fc901f565dad709507e10c1cdb7a10c454b8d3eabaf8eeaa0c230467a6
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="OKTAGON 80" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",OKTAGON 80
 https://cdn13.apkcdn.life/live/cdn13/playlist.m3u8?expires=1763860623&token=3d44c12c4e5cc01e2f2628b5dde63c8cedba6525dfb52d3f7eaa45c7f7c89f1a
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Charlotte Hornets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Charlotte Hornets
