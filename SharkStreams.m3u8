@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
 https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763936333&token=3a0e151616d649195fec7a3c2fbe14049f601219b48f5c238d928b217b05a221
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1763936743&token=10022c2e5444d4faf2144e6c01092d82a581577fce00b40bed92ec3842d00636
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Indianapolis Colts vs Kansas City Chiefs (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Indianapolis Colts vs Kansas City Chiefs (Nov 23 - 01:00 PM ET)
 https://cdn3.apkcdn.life/live/cdn3/playlist.m3u8?expires=1763936350&token=dea6be567ec145bd08b9bc027d48cb3d2b8b5eb677b52ad03eed6877a9b02175
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Minnesota Vikings vs Green Bay Packers (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Minnesota Vikings vs Green Bay Packers (Nov 23 - 01:00 PM ET)
@@ -27,7 +29,15 @@ https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763936338&token=6ac6
 https://cdn13.apkcdn.life/live/cdn13/playlist.m3u8?expires=1763936332&token=1098652f31dc784224ba08ab925904b92b7c0f05ee539021c0afc40c8d4f48cc
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Orlando Magic vs Boston Celtics (Nov 23 - 06:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Orlando Magic vs Boston Celtics (Nov 23 - 06:00 PM ET)
 https://cdn4.apkcdn.life/live/cdn4/playlist.m3u8?expires=1763936553&token=ece7be61cb56d793f072372cd09d1b89e66f3cb9fc192f309d162feb823e062d
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Cleveland Cavaliers (Nov 23 - 06:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Cleveland Cavaliers (Nov 23 - 06:00 PM ET)
+https://cdn5.apkcdn.life/live/cdn5/playlist.m3u8?expires=1763936767&token=4adb842ce0b0fb5498bc3831eb6b05e038f89d88eff356259c448fb8c2e3dc23
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Brooklyn Nets vs Toronto Raptors (Nov 23 - 06:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Brooklyn Nets vs Toronto Raptors (Nov 23 - 06:00 PM ET)
+https://cdn6.apkcdn.life/live/cdn6/playlist.m3u8?expires=1763936773&token=332b4ef4a61333dc6a758092c60659ad1467e8ddf8d030d869de94574bc05ba4
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Portland Trail Blazers vs Oklahoma City Thunder (Nov 23 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Portland Trail Blazers vs Oklahoma City Thunder (Nov 23 - 07:00 PM ET)
 https://cdn7.apkcdn.life/live/cdn7/playlist.m3u8?expires=1763936778&token=a5e4a5c1d962aad2ff3b929fdbf791d524f29257f664d91fe7ffae1e10493f92
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Phoenix Suns (Nov 23 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Phoenix Suns (Nov 23 - 08:00 PM ET)
+https://cdn8.apkcdn.life/live/cdn8/playlist.m3u8?expires=1763936780&token=0d3d2401dcacacf1710573578d4e2d181d0c9ca85b1a7fade6d29d855ad46778
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Lakers vs Utah Jazz (Nov 23 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Lakers vs Utah Jazz (Nov 23 - 08:00 PM ET)
+https://cdn9.apkcdn.life/live/cdn9/playlist.m3u8?expires=1763936786&token=1b693ecfff292d7a371ad751fb7f3ee44d445781954b3f68527bf1c45854b33f
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Tampa Bay Buccaneers vs Los Angeles Rams (Nov 23 - 08:20 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Tampa Bay Buccaneers vs Los Angeles Rams (Nov 23 - 08:20 PM ET)
 https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763936353&token=bd8671f116eda48811b7882a228e3e31ca2a8ca30e170f10db544f8e6e8f23c4
