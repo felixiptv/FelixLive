@@ -1,31 +1,33 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763920833&token=4c9eef7776c29fe35cabb3407f4903b65be7c813d8ce66a90e6469967b8b56c3
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1763933124&token=210693490aaf9aedccdb2c57a1d5e51b3a75ba6538320b23eb77dd8fb1f02712
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763936333&token=3a0e151616d649195fec7a3c2fbe14049f601219b48f5c238d928b217b05a221
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Indianapolis Colts vs Kansas City Chiefs (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Indianapolis Colts vs Kansas City Chiefs (Nov 23 - 01:00 PM ET)
-https://cdn3.apkcdn.life/live/cdn3/playlist.m3u8?expires=1763920858&token=8525ffa4fb54f426a8a13f689bc7cd372c8544dbaa3339a6e218bd0a94550a54
+https://cdn3.apkcdn.life/live/cdn3/playlist.m3u8?expires=1763936350&token=dea6be567ec145bd08b9bc027d48cb3d2b8b5eb677b52ad03eed6877a9b02175
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Minnesota Vikings vs Green Bay Packers (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Minnesota Vikings vs Green Bay Packers (Nov 23 - 01:00 PM ET)
-https://cdn4.apkcdn.life/live/cdn4/playlist.m3u8?expires=1763920847&token=a6d5843291e4d1863eaa0f2d7ca277f1d5b61cc0e2a905222dda303bd9fc87ef
+https://cdn4.apkcdn.life/live/cdn4/playlist.m3u8?expires=1763936413&token=ee0d6e15ef157260f3e2e1a594570caadf2ef62f2752433543b3cf05defbf89c
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="New England Patriots vs Cincinnati Bengals (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",New England Patriots vs Cincinnati Bengals (Nov 23 - 01:00 PM ET)
-https://cdn5.apkcdn.life/live/cdn5/playlist.m3u8?expires=1763920853&token=97bc11755f78a6f43443d2842266a6b236caa00ee084d9516df91b6743b70dac
+https://cdn5.apkcdn.life/live/cdn5/playlist.m3u8?expires=1763936341&token=4cae1a89fbf4e6f254b3b89ac53e024ff888b60d75e25e3918edcedb939b4202
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="New York Giants vs Detroit Lions (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",New York Giants vs Detroit Lions (Nov 23 - 01:00 PM ET)
-https://cdn6.apkcdn.life/live/cdn6/playlist.m3u8?expires=1763920839&token=a96f14fe6a774ec5cff7d17a2abadeb1a76dfbd679b4102343e0dc68f4ad87c2
+https://cdn6.apkcdn.life/live/cdn6/playlist.m3u8?expires=1763936375&token=8859e1f18e806911938c5752247f74e53585f1e9616970383f16d1ac50838877
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="New York Jets vs Baltimore Ravens (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",New York Jets vs Baltimore Ravens (Nov 23 - 01:00 PM ET)
-https://cdn7.apkcdn.life/live/cdn7/playlist.m3u8?expires=1763924275&token=895d096284011bd74ecf90e9cb85e7c26f10c1543cb8f73a8b626e8309e53582
+https://cdn7.apkcdn.life/live/cdn7/playlist.m3u8?expires=1763936336&token=39c71c8ed9425482101c1fa1e8bed5ccfe14160faf9cec8f66e568d781979544
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Pittsburgh Steelers vs Chicago Bears (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Pittsburgh Steelers vs Chicago Bears (Nov 23 - 01:00 PM ET)
-https://cdn8.apkcdn.life/live/cdn8/playlist.m3u8?expires=1763920849&token=9e77743dd2a5aff1c9aee8515985667ec45642f719efd9df2f1a373aed4633c7
+https://cdn8.apkcdn.life/live/cdn8/playlist.m3u8?expires=1763936373&token=a23e84ab3bae6ca7cb7d4284672b9b2c18c48011150ee97b97c644ea1fb99b78
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Seattle Seahawks vs Tennessee Titans (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Seattle Seahawks vs Tennessee Titans (Nov 23 - 01:00 PM ET)
-https://cdn9.apkcdn.life/live/cdn9/playlist.m3u8?expires=1763920836&token=637f63d9c50d319438fcf183fbb1f96bd6d5aada592c75d20b8c734020ce1813
+https://cdn9.apkcdn.life/live/cdn9/playlist.m3u8?expires=1763936502&token=8575a8a560ca07386603e7e5741a8eb4ccb00025f0c57dc150b31ad1bdc5c0ee
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Miami Heat vs Philadelphia 76ers (Nov 23 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Miami Heat vs Philadelphia 76ers (Nov 23 - 01:00 PM ET)
-https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763921044&token=9800c9fc73dab33ed2f11fd341aba34daccb74286957e52e1439a3ef07ff8399
+https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763936612&token=cb5cf12366a3cfb39e826761ac4e8016e7666cf040c69c1ba957e56566278205
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Cleveland Browns vs Las Vegas Raiders (Nov 23 - 04:05 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Cleveland Browns vs Las Vegas Raiders (Nov 23 - 04:05 PM ET)
-https://cdn10.apkcdn.life/live/cdn10/playlist.m3u8?expires=1763922258&token=0da4059b52f105bf94f84a517081c82b2ab56207c06efac03150e33409ecef5f
+https://cdn10.apkcdn.life/live/cdn10/playlist.m3u8?expires=1763936332&token=2622e8b113efe29c517b510b8e8c7a2067a2ceda7bf495bf749b6e9035e3b3a7
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Jacksonville Jaguars vs Arizona Cardinals (Nov 23 - 04:05 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Jacksonville Jaguars vs Arizona Cardinals (Nov 23 - 04:05 PM ET)
-https://cdn11.apkcdn.life/live/cdn11/playlist.m3u8?expires=1763923225&token=d2bf2d409d85f599c88fc8e74976ca8fd05b16737ad58380b46d64fec14bf339
+https://cdn11.apkcdn.life/live/cdn11/playlist.m3u8?expires=1763936340&token=bc20fc232baa1ef8fa1775965b133c2ea680ab69544b2a9ea484de9d274dc633
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Atlanta Falcons vs New Orleans Saints (Nov 23 - 04:25 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Atlanta Falcons vs New Orleans Saints (Nov 23 - 04:25 PM ET)
-https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763922855&token=603852a07dfea55a11250ef1bff650ed69dababc094f691ba121b7afd99121ef
+https://cdn12.apkcdn.life/live/cdn12/playlist.m3u8?expires=1763936338&token=6ac67ff3633ca155e1403342202d8f3e4922e31d1726813d180eea3deb48798f
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Philadelphia Eagles vs Dallas Cowboys (Nov 23 - 04:25 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Philadelphia Eagles vs Dallas Cowboys (Nov 23 - 04:25 PM ET)
-https://cdn13.apkcdn.life/live/cdn13/playlist.m3u8?expires=1763922613&token=51e3e8e015687fc12d7089f4157862cef58e5c7ed34deff61a20731c2a0ef6e8
+https://cdn13.apkcdn.life/live/cdn13/playlist.m3u8?expires=1763936332&token=1098652f31dc784224ba08ab925904b92b7c0f05ee539021c0afc40c8d4f48cc
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Orlando Magic vs Boston Celtics (Nov 23 - 06:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Orlando Magic vs Boston Celtics (Nov 23 - 06:00 PM ET)
+https://cdn4.apkcdn.life/live/cdn4/playlist.m3u8?expires=1763936553&token=ece7be61cb56d793f072372cd09d1b89e66f3cb9fc192f309d162feb823e062d
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Portland Trail Blazers vs Oklahoma City Thunder (Nov 23 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Portland Trail Blazers vs Oklahoma City Thunder (Nov 23 - 07:00 PM ET)
+https://cdn7.apkcdn.life/live/cdn7/playlist.m3u8?expires=1763936778&token=a5e4a5c1d962aad2ff3b929fdbf791d524f29257f664d91fe7ffae1e10493f92
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Tampa Bay Buccaneers vs Los Angeles Rams (Nov 23 - 08:20 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Tampa Bay Buccaneers vs Los Angeles Rams (Nov 23 - 08:20 PM ET)
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763923094&token=08df0d9e6a54a80f49027dd33bc6b2202e85c3a18b4e579a5f3906a45cf3761e
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1763936353&token=bd8671f116eda48811b7882a228e3e31ca2a8ca30e170f10db544f8e6e8f23c4
