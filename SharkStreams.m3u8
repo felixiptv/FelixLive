@@ -1,13 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764132369&token=f7d630a9b4e3b6435a982c7ae6527802a5bea70da1f5f1372565c1f0b4744a66
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764132213&token=e36072599cf63a3e9c80b451ac7c1b9880af11a8bdeee99dd3b51fb8dd47e1fb
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764188891&token=9b0f4d35fb64f60673d5584834f3d11e146e6fc486f6527aaa7b7a659c756beb
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764134816&token=3d50c706cc00c4980af244747fa53a5cb5196dd127bfb467047ec35615cabf5f
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Atlanta Hawks vs Washington Wizards" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Atlanta Hawks vs Washington Wizards
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764132285&token=3de1153145b18ef94703248f9fa8d3161412583da035323158c735be72a80a85
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764132033&token=a758fd6fc8f41638de4aaa74229e6de2c7f9c4dbd8cc0becff6894d046dcf060
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Orlando Magic vs Philadelphia 76ers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Orlando Magic vs Philadelphia 76ers
-https://cdn2.apkdb.life/live/cdn2/playlist.m3u8?expires=1764140374&token=06454cd11861286f247c6ffb2eed65a62c246cd90ad227b6f46fe7fd2d82ecf6
+https://cdn2.apkdb.life/live/cdn2/playlist.m3u8?expires=1764132031&token=96e1f45fb64d73b760d0f86df3c6e96c9d0237fad2467881183db5c9768a3eac
 #EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="Edmonton Oilers vs Dallas Stars" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/NHL.png" group-title="SharkStreams - NHL",Edmonton Oilers vs Dallas Stars
-https://cdn3.apkdb.life/live/cdn3/playlist.m3u8?expires=1764132499&token=c7a77dd337586b3bd6ad30249534535fe3453f8b611094b4d9e8acea20a88b55
+https://cdn3.apkdb.life/live/cdn3/playlist.m3u8?expires=1764132028&token=8c0facb73deb9e7802bb6dde0813ea6bc2db697534a835025ecf42d655d05582
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Los Angeles Lakers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Los Angeles Lakers
 https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764131989&token=8d74dd717c3395091d5070444a3c00a2ed31bbce1b3db929453b0bc7271a4b13
