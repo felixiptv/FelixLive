@@ -1,7 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764269986&token=8bcdc41f266eba363089841956da93f0a1a5be79a2e84408023ef8aee3439ac2
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764274444&token=3edf0cd21bee144a02a01e850cb720dc1a31958d1602991cefde8743e406716f
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764271461&token=4e582d5d70145d140318e96bea346b62acc8223662cfaf70516f6108da674d31
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764275161&token=3f34f214c71d4f09e4dd44d0ceda6acef8cae025cd58173db324e771c5028634
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Green Bay Packers  vs  Detroit Lions (Nov 27 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Green Bay Packers  vs  Detroit Lions (Nov 27 - 01:00 PM ET)
-https://cdn2.apkdb.life/live/cdn2/playlist.m3u8?expires=1764269931&token=5f6321b892cb04f4c1be4a55b0f2e83669feb4cb27f44321a14fa58792e99fcb
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764274182&token=024cca67999a53099db52e0ed7e7420bfdcea614f7358271cf7987115a7c2e8f
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Kansas City Chiefs vs Dallas Cowboys (Nov 27 - 04:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Kansas City Chiefs vs Dallas Cowboys (Nov 27 - 04:30 PM ET)
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764274264&token=9cdecff4461b60a5186806c52db0678937b21645c3bc1ee813042d2ef002bfee
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Cincinnati Bengals vs Baltimore Ravens (Nov 27 - 08:20 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Cincinnati Bengals vs Baltimore Ravens (Nov 27 - 08:20 PM ET)
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764274285&token=eb1f0fc024d28c5bd420d090f06b411a74a1c288f716362513f9ef421e7666b3
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Dallas Mavericks vs Los Angeles Lakers (Nov 27 - 10:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Dallas Mavericks vs Los Angeles Lakers (Nov 27 - 10:00 PM ET)
+https://cdn12.apkdb.life/live/cdn12/playlist.m3u8?expires=1764275217&token=ad501a9c601b91b73a5247ccbbc4fcdb040378f17243def31d5acba990def7f4
