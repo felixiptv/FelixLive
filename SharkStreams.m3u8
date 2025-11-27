@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764202702&token=05455ae8a7fb46e674555028d7ccc9fa0c8606dfd58c5ec85fad83a0f6ec2364
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764202453&token=d57c535b444c5737a14d819a93be9fa6fb4749a54667723679b0bfece0521011
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
 https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764205674&token=eda52e64f578ecad3d8e6f7baa3a7508aa7b24b5f3e363471a07d57eef63345c
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Detroit Pistons vs Boston Celtics" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Detroit Pistons vs Boston Celtics
