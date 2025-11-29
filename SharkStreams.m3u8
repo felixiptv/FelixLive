@@ -1,33 +1,33 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764361761&token=b9d072a29f97487af5e4d64d773dae79259af4bc921b979a96b063a42c6c360a
+https://cdn1.apkcdn.life/live/cdn1/playlist.m3u8?expires=1764361772&token=b7c3d6ebe4091b4c800430e8ea9d7bd96a393af955a097e48aac91150af8f5a4
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764365078&token=77f8d3e476e637610ed11da89fc6ef2b60dea23af96f632263de50baf163179a
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764366641&token=ef73a39c06556630ede8ccbd9157b6804fa1697b004d449858b8164c5f779abc
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Kansas City Chiefs vs Dallas Cowboys" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Kansas City Chiefs vs Dallas Cowboys
-https://cdn2.apkdb.life/live/cdn2/playlist.m3u8?expires=1764361881&token=f5181c2865029327a6f5c2b220954c99392819bfd25983e5f085f20bd30ee3ff
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Orlando Magic vs Detroit Pistons" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Orlando Magic vs Detroit Pistons
-https://cdn3.apkdb.life/live/cdn3/playlist.m3u8?expires=1764365078&token=104aef693e9b2ae7d20eb21c0c54b628b16930c53812d0f5ad2e06d980295f3f
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Washington Wizards vs Indiana Pacers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Washington Wizards vs Indiana Pacers
-https://cdn4.apkdb.life/live/cdn4/playlist.m3u8?expires=1764365078&token=faa9621a1c323b7bfc10106d01cd5d18be9ae8665f63f43e75803f10f104e25c
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Cleveland Cavaliers vs Atlanta Hawks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Cleveland Cavaliers vs Atlanta Hawks
-https://cdn5.apkdb.life/live/cdn5/playlist.m3u8?expires=1764365078&token=99d50176aa1bb23ec8eb3f6011528e8d24fd62f8b4d096648f091ac213f0a5d5
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Chicago Bulls vs Charlotte Hornets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Chicago Bulls vs Charlotte Hornets
-https://cdn6.apkdb.life/live/cdn6/playlist.m3u8?expires=1764365078&token=31d2a25299a2c1aab08293c6eba73594205c4d94b0e9e200132dcdb8bfc273df
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Philadelphia 76ers vs Brooklyn Nets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Philadelphia 76ers vs Brooklyn Nets
-https://cdn7.apkdb.life/live/cdn7/playlist.m3u8?expires=1764365078&token=037b6ea1133277ff7d0cfabcaf2e248c19dda2c39ac91a14b5f558f19347a785
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Milwaukee Bucks vs New York Knicks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Milwaukee Bucks vs New York Knicks
-https://cdn8.apkdb.life/live/cdn8/playlist.m3u8?expires=1764365078&token=43dc06363c049fe9092fe2eff148ec8d38ef44ea7c720559ddd147e28fdb6444
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764361781&token=2e19e3b8e4a94839531523c09f9d21213d0c31645fcd04b0dca4bb5018f408c1
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Cincinnati Bengals vs Baltimore Ravens" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Cincinnati Bengals vs Baltimore Ravens
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764361912&token=5cecb0c024194d686596419567a9542f1ecfbcca8e4a9932254b153af3c3779a
+https://cdn2.apkdb.life/live/cdn2/playlist.m3u8?expires=1764361837&token=bedb88565ece349d84152749a12e77d39b1d9797302d3e0a0242ad40e5d03c25
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Chicago Bears  vs  Philadelphia Eagles" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Chicago Bears  vs  Philadelphia Eagles
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764361759&token=10745cbc01e4a57a8a007b3d74c7760be9899c175ecd1f398fb7f86e354b66f4
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Orlando Magic vs Detroit Pistons" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Orlando Magic vs Detroit Pistons
+https://cdn3.apkdb.life/live/cdn3/playlist.m3u8?expires=1764366641&token=d9d632d2c9ee648faaa953271e200d5db0c43f2eb30bcfccdc7aafe73a615c59
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Washington Wizards vs Indiana Pacers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Washington Wizards vs Indiana Pacers
+https://cdn4.apkdb.life/live/cdn4/playlist.m3u8?expires=1764366641&token=ed7997f8f7429ef91a491a5cec7c699a56689af51f4e209d7c99ca44461aae9e
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Cleveland Cavaliers vs Atlanta Hawks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Cleveland Cavaliers vs Atlanta Hawks
+https://cdn5.apkdb.life/live/cdn5/playlist.m3u8?expires=1764366641&token=a3d8d9819e081b4f40a33cd2a6186bd06f4db6bfc9db51271da0f68d6fce68e6
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Chicago Bulls vs Charlotte Hornets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Chicago Bulls vs Charlotte Hornets
+https://cdn6.apkdb.life/live/cdn6/playlist.m3u8?expires=1764366641&token=b84dc3ed9f51a0a697040b49a3d1fa9e3ee61a8d31b5642014f181efb76f3184
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Philadelphia 76ers vs Brooklyn Nets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Philadelphia 76ers vs Brooklyn Nets
+https://cdn7.apkdb.life/live/cdn7/playlist.m3u8?expires=1764366641&token=1c9bdfa1a5a3a074a784a812556b0f06aa590c333fe1b3fc7e8d2aecaf415771
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Milwaukee Bucks vs New York Knicks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Milwaukee Bucks vs New York Knicks
+https://cdn8.apkdb.life/live/cdn8/playlist.m3u8?expires=1764366641&token=88eeacad9487feba243fb479e58595e0988124964e6f7c32858b126157b41eb6
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Oklahoma City Thunder
-https://cdn9.apkdb.life/live/cdn9/playlist.m3u8?expires=1764365079&token=aa1fb52fdd8bef89f771103643744c89494853adbc7bfcaa9895923cfb27395d
+https://cdn9.apkdb.life/live/cdn9/playlist.m3u8?expires=1764366641&token=3cc855fc6449c42eb71de17e477e9fe75013f98fda3bfbebf0fbb3959232ba8c
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Denver Nuggets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Denver Nuggets
-https://cdn10.apkdb.life/live/cdn10/playlist.m3u8?expires=1764365079&token=325fcae302899eab6c69372c0e84b633bdc1c016e472cda4f68f481f42191825
+https://cdn10.apkdb.life/live/cdn10/playlist.m3u8?expires=1764366641&token=fb8809da8a8f1167ccc362506e5800774fa9fbdbe7101a54048a2a83abfaa4b7
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Utah Jazz" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Utah Jazz
-https://cdn11.apkdb.life/live/cdn11/playlist.m3u8?expires=1764365079&token=5892bfc4e0859b53eb2f3c33294b3ab529092cfb416e3eb18f0259b859d283b6
+https://cdn11.apkdb.life/live/cdn11/playlist.m3u8?expires=1764366641&token=3bfcc74cf7d1c77076206c83a9e955f3b8ecb3b66b67179ec63a89cd73bb8e7b
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Memphis Grizzlies vs Los Angeles Clippers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Memphis Grizzlies vs Los Angeles Clippers
-https://cdn12.apkdb.life/live/cdn12/playlist.m3u8?expires=1764365079&token=41f3e4e1261b5ce212efc767ad832739c4df67f3bd79d45b4758b432e04665e4
+https://cdn12.apkdb.life/live/cdn12/playlist.m3u8?expires=1764366641&token=ef8ae40b35ec94d0d44f53e8c40762cc00a5c5c12aeea914ec631e85f07c6611
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Dallas Mavericks vs Los Angeles Lakers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Dallas Mavericks vs Los Angeles Lakers
-https://cdn12.apkdb.life/live/cdn12/playlist.m3u8?expires=1764365079&token=41f3e4e1261b5ce212efc767ad832739c4df67f3bd79d45b4758b432e04665e4
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Chicago Bears  vs  Philadelphia Eagles (Nov 28 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Chicago Bears  vs  Philadelphia Eagles (Nov 28 - 03:00 PM ET)
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764361758&token=0883d26c85ec81eebace3e30fdae6b6d9082e312fd49062e60443f4fa77c347c
+https://cdn12.apkdb.life/live/cdn12/playlist.m3u8?expires=1764366279&token=25518f9a401968cae1aceb8a26464550095677496625bb3a70984a08ffb183ab
