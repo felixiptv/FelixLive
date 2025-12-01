@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764559301&token=ede6970f87fcf309b3339ba210d39e3dfc1a4c865fe42549f4618b455fd51bc2
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764540041&token=db59a4335cf3814e9a8cdbf2a873c46ffae40a69c918cadbe6699eb640b6e50b
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
 https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764545123&token=3f3bf80433942708ea7fe2e73f628341b2ba5d41ecece8ee2d38e722ffe0f68b
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Arizona Cardinals vs Tampa Bay Buccaneers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Arizona Cardinals vs Tampa Bay Buccaneers
