@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764708552&token=23e79b3442b578a7100cf1d749620d19739313a19dc4b0fcb947e5bf85e527c5
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764707339&token=ca231bd0c8de64fcbc95bd868969f86de99d9a2db29a9ea5447e90cb21d0b98a
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
 https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764707339&token=af8353d28a0a11007645ea10190913ef69f5bc79c2d46eb550aa8e927589078e
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Washington Wizards vs Philadelphia 76ers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Washington Wizards vs Philadelphia 76ers
