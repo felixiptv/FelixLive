@@ -1,23 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764873269&token=eff57f6f29c6a2fb63f28ad9cf82583d7ded3c30f4cf5df89fea70a27b69f107
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764883600&token=c0ea862f6009db4acbda47762c762e9d4bf33f5d7ff5f2a199815d6ed947f357
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764820491&token=4abd1ab2d04852f061c5fffaad9924656d2a4c8c01fab7af88a75a2ceec04853
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs  vs  Orlando Magic" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs  vs  Orlando Magic
-https://cdn3.apkdb.life/live/cdn3/playlist.m3u8?expires=1764811167&token=e3ec7e38d858a58902bcc01f674cdbff9a9352f262b0be01e1f36463b0285821
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Denver Nuggets  vs  Indiana Pacers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Denver Nuggets  vs  Indiana Pacers
-https://cdn2.apkdb.life/live/cdn2/playlist.m3u8?expires=1764811686&token=abfa4978c5647c8c717a93bb9158209c2e301a5167c6adcdbca9b3a1027776cd
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Portland Trail Blazers  vs  Cleveland Cavaliers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Portland Trail Blazers  vs  Cleveland Cavaliers
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1764812697&token=aac656082f926935d61d24e2f2bd76c148a22e3839cd290c8c6a0298b7cda1a2
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers  vs  Atlanta Hawks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers  vs  Atlanta Hawks
-https://cdn4.apkdb.life/live/cdn4/playlist.m3u8?expires=1764811468&token=95bfc1051a3df579ba9213319bd3eeb7d842459a384e47ba97a999a92775aca1
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Charlotte Hornets  vs  New York Knicks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Charlotte Hornets  vs  New York Knicks
-https://cdn5.apkdb.life/live/cdn5/playlist.m3u8?expires=1764813940&token=71154da06b034944270ee1c87456a4b8165a62651d343492f3d7e0a4b27060ab
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Brooklyn Nets  vs  Chicago Bulls" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Brooklyn Nets  vs  Chicago Bulls
-https://cdn6.apkdb.life/live/cdn6/playlist.m3u8?expires=1764812073&token=4be9a622a9ff3b25c45279952d55a9af87d25d1021c54c8a1dfffbf4bc306052
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings  vs  Houston Rockets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings  vs  Houston Rockets
-https://cdn7.apkdb.life/live/cdn7/playlist.m3u8?expires=1764811043&token=a3e594a9311c865bd66af9ef78608725af6af4bfbf60a632ca99ccba59e7587b
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Detroit Pistons  vs  Milwaukee Bucks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Detroit Pistons  vs  Milwaukee Bucks
-https://cdn8.apkdb.life/live/cdn8/playlist.m3u8?expires=1764811404&token=97300fecc9e1d236b651a5b8481cf8653f863cbd972709a9935bf8a45d75fd67
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Miami Heat  vs  Dallas Mavericks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Miami Heat  vs  Dallas Mavericks
-https://cdn9.apkdb.life/live/cdn9/playlist.m3u8?expires=1764812572&token=d27246a3c28a80c0be2a6ccc80b1b0479e82668f62ba509521545e32f31e1b14
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1764883602&token=f71f36e8804a0f40be9f9f03cee75a540e1b6d7b00aa6c77da2f704f1a812a3a
