@@ -1,9 +1,15 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765045829&token=2ad8366546698ffaf40cee0c1f141307bcbb4bf03f38511441755522ba8d7864
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765046226&token=2630e41cb3640640d20a7ba74a75c8d8bb4046c625f5859c3290847022f5bba8
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765045830&token=9733a929e38c88bca82c2c8ec5019c23711607f8c9ea936174216ce9b2ab4130
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765049025&token=de9d50a3ea1069a80b88a2d5d09b15ec51067d06c7de5c79275cc148a23a48f9
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="BKFC 85 HOLLYWOOD TROUT vs PALOMINO 2" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - MMA",BKFC 85 HOLLYWOOD TROUT vs PALOMINO 2
-https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765045832&token=8f34f69259f9ba86e26922a81108e9fcee99560ad89c1f2ac17b8c695ae58763
+https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765049026&token=be4de75cd25b8ab3e0286567b8e2d614895bc3e62bf0a65f74414ba50d9f022b
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC 323:Dvalishvili vs Yan 2 (Dec 06 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC 323:Dvalishvili vs Yan 2 (Dec 06 - 03:00 PM ET)
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765048929&token=a1ac0f492c7fd4a421354916b5ce7b1148ace2f8c1caf107a29977df4513f926
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Shabaz Masoud vs Peter McGrail (Dec 06 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Shabaz Masoud vs Peter McGrail (Dec 06 - 03:00 PM ET)
-https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765045798&token=b4dd23d5b0b104be747f8ee6165c4baf420ded7a92cda49eb8fb982d38a35d1f
+https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765046116&token=de0e66506994721aaa6a88f00bc8bc76d5eb7e667508dcde077065b5bc3a2e2e
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Pitbull vs. Roach (Dec 06 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Pitbull vs. Roach (Dec 06 - 07:00 PM ET)
+https://cdn8.dbfile.cfd/live/cdn8/playlist.m3u8?expires=1765046249&token=187e3dae48878da8619800bb4601b276129577c5f2fe3705d624ce3e13a7fd67
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Isaac Cruz vs. Lamont Roach (Dec 06 - 09:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Isaac Cruz vs. Lamont Roach (Dec 06 - 09:00 PM ET)
+https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765048860&token=6b5ba57dbf7e3845e138c89fc87c4d815f0376bfc963325c9ed80066a8a3c531
