@@ -1,29 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765046436&token=2dc928f044bf909caeda6a0b969982c176a37ba02abe6b8cb1d388bde7cc3ad2
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765054499&token=5382ea439d8453d587b2a7b692c85518a8569f20fbd3362bed305b0ebebb7d7c
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765052141&token=4d7aa4439bfec91620fb3499cff49be9fdd97b773cfef7f9e1ab401d221ca2ba
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="BKFC 85 HOLLYWOOD TROUT vs PALOMINO 2" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - MMA",BKFC 85 HOLLYWOOD TROUT vs PALOMINO 2
-https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765052141&token=f23f9b691a06c4360fff856172041de656a12e26f02fff5a078532c9e4b3eebf
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765056332&token=e541aaae70775869496743ae413439847a02109e8b0db0af760250309dce5321
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC 323:Dvalishvili vs Yan 2 (Dec 06 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC 323:Dvalishvili vs Yan 2 (Dec 06 - 03:00 PM ET)
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765052141&token=6d7782194c97761f4f5160b116d765baa85b87f00fbd66ea77ae7f5ea7b9c4d6
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765054646&token=8ad3921f19ffcf529044ab7ffb07dc8945210325cbd6982e7d79b0396f881bed
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Shabaz Masoud vs Peter McGrail (Dec 06 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Shabaz Masoud vs Peter McGrail (Dec 06 - 03:00 PM ET)
-https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765046385&token=bcf9a089e77034ade11de3163be47aef28b40bab644aa95b9598cabbb4bdeb7d
+https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765054162&token=7318fc537f2f152345aeeebf9e0e2d735d936dfb9348a0d1780b020fa43f3d39
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="New Orleans Pelicans vs Brooklyn Nets (Dec 06 - 05:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New Orleans Pelicans vs Brooklyn Nets (Dec 06 - 05:00 PM ET)
-https://cdn9.dbfile.cfd/live/cdn9/playlist.m3u8?expires=1765052141&token=76bddd3fb7a716e777d14e9f148aa14e1d46d359c3a778a804b4af12b675b9b1
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Atlanta Hawks vs Washington Wizards (Dec 06 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Atlanta Hawks vs Washington Wizards (Dec 06 - 07:00 PM ET)
-https://cdn10.dbfile.cfd/live/cdn10/playlist.m3u8?expires=1765052141&token=118742de5d8209ebc37ffcb03e1b5c84cc1d59c887f0ed472abc1a0500dd307d
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Pitbull vs. Roach (Dec 06 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Pitbull vs. Roach (Dec 06 - 07:00 PM ET)
-https://cdn8.dbfile.cfd/live/cdn8/playlist.m3u8?expires=1765048218&token=9df814621f0ceaa9d9640b0c86f22202f8d237e7d08ef572923779e9ef5433b6
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Milwaukee Bucks vs Detroit Pistons (Dec 06 - 07:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Milwaukee Bucks vs Detroit Pistons (Dec 06 - 07:30 PM ET)
-https://cdn11.dbfile.cfd/live/cdn11/playlist.m3u8?expires=1765052141&token=d469dba2ba74898a4127f2ff70ec4e19b1e13e3fede079a8a8c42231dbd5f008
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Golden State Warriors vs Cleveland Cavaliers (Dec 06 - 07:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Golden State Warriors vs Cleveland Cavaliers (Dec 06 - 07:30 PM ET)
-https://cdn12.dbfile.cfd/live/cdn12/playlist.m3u8?expires=1765052141&token=dfe8f258dd780d7f9ed53b5d67cc72c7f5c13aefe8d72c9234f03f5a9f336caa
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Miami Heat (Dec 06 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Miami Heat (Dec 06 - 08:00 PM ET)
-https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765052141&token=f23f9b691a06c4360fff856172041de656a12e26f02fff5a078532c9e4b3eebf
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Minnesota Timberwolves (Dec 06 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Minnesota Timberwolves (Dec 06 - 08:00 PM ET)
-https://cdn14.dbfile.cfd/live/cdn14/playlist.m3u8?expires=1765052141&token=42f32873c7620872c617368c1a8dcf5020c49afea8b9bf10678c509041ba6d5e
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Houston Rockets vs Dallas Mavericks (Dec 06 - 08:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Houston Rockets vs Dallas Mavericks (Dec 06 - 08:30 PM ET)
-https://cdn15.dbfile.cfd/live/cdn15/playlist.m3u8?expires=1765052141&token=1174275db812d7c7c6da5e81745a0d2859d36679cbc0f35c07a1d6ab8e5a70c8
+https://cdn9.dbfile.cfd/live/cdn9/playlist.m3u8?expires=1765054878&token=a6d61e6de47c672ceffdc5433ab34b56e16369c82417cb019ae65cdbfa75940c
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Isaac Cruz vs. Lamont Roach (Dec 06 - 09:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Isaac Cruz vs. Lamont Roach (Dec 06 - 09:00 PM ET)
-https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765052141&token=3ce80e52360fdb2b23af93b4eb8b34ed4b94dc63af57bd918bc8610927c52bf8
+https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765054735&token=e59bf643e709c0e97293246cb84ba7b47f9c2760a4de20713714c09ed5013ad0
