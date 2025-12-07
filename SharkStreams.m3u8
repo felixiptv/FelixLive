@@ -1,21 +1,27 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765078511&token=9d2b0d6bb059b60647072a86a43ca8ee9c8e8d51a6064b0baf7e42e311d279d1
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765079912&token=bd3f9ab96c10cd2be5124235752584a5674953ec8796a52e3d77c9bf014d1fd3
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765078513&token=629c6ab895a7ded97b5731be5dbef586c84f789d1273fe9004b7d8e172b0ad2d
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765081584&token=72a5f06d9e92c619225809584a63bdf0c15ebdf82f886d433e987c0f25e86b02
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="BKFC 85 HOLLYWOOD TROUT vs PALOMINO 2" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - MMA",BKFC 85 HOLLYWOOD TROUT vs PALOMINO 2
+https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765080372&token=29a7c7902d90bbb121c67a45cc060f0577cf13f2ceee5449e43518d4d857c4a0
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC 323:Dvalishvili vs Yan 2" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC 323:Dvalishvili vs Yan 2
-https://cdn10.dbfile.cfd/live/cdn10/playlist.m3u8?expires=1765078477&token=46e26d7da3c18edfca44580c3861c2f9cdfc556335e0621ceb572364ab9d7525
+https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765079786&token=0f2c5e3c3bd6a4b9eef9ccf5a97ddc21a5eebd1ffd42c3f990488f7ff395dea5
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Shabaz Masoud vs Peter McGrail" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Shabaz Masoud vs Peter McGrail
-https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765078506&token=cbdcaa51e79d0e5274993451e5aed239635fe8b0096a70411d00e581a9be5942
+https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765079857&token=e46c3f15148ba3b9b5a4d8fc8a3ba17e062d539a7548742ba7af033754ee0620
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="New Orleans Pelicans vs Brooklyn Nets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New Orleans Pelicans vs Brooklyn Nets
+https://cdn9.dbfile.cfd/live/cdn9/playlist.m3u8?expires=1765080123&token=48cf115c2c2777e373a66b9f7df67a229a3b0ead6fab8f7b0524b9d7bdb2b967
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Atlanta Hawks vs Washington Wizards" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Atlanta Hawks vs Washington Wizards
+https://cdn10.dbfile.cfd/live/cdn10/playlist.m3u8?expires=1765080207&token=4918d82f058e027959f77cdd45c2347ec1ffe0fd1521ca065352d73f87ae32fd
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Milwaukee Bucks vs Detroit Pistons" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Milwaukee Bucks vs Detroit Pistons
-https://cdn11.dbfile.cfd/live/cdn11/playlist.m3u8?expires=1765078481&token=f6283bcc89e113ff893bfbeb92467c745feebef8e7e21502e692ec6ac4aeebbd
+https://cdn11.dbfile.cfd/live/cdn11/playlist.m3u8?expires=1765079800&token=65ef145be338fed403f997dd9146fc9c162c7dc9cbc8b6dd77b83ddd5ece8292
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Golden State Warriors vs Cleveland Cavaliers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Golden State Warriors vs Cleveland Cavaliers
-https://cdn12.dbfile.cfd/live/cdn12/playlist.m3u8?expires=1765078480&token=57d060e571647a93577cba72c6cee16b77d9d6b255cf4bc5b7a6121dc14e98ea
+https://cdn12.dbfile.cfd/live/cdn12/playlist.m3u8?expires=1765079818&token=f905795823618c228b0fb1fcbbb720b4adaaf17f5fda853bb45ee984c28f82b9
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Miami Heat" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Miami Heat
-https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765078521&token=7a47919924c22d79bcae133fbe47717d65a8a48a472e7225d865e1336b5b53c3
+https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765079949&token=6c815f9e98ee18e5fa32149d6f63b9d8ca6a004e7b95df018d2354fe1b6e572b
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Minnesota Timberwolves" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Minnesota Timberwolves
-https://cdn14.dbfile.cfd/live/cdn14/playlist.m3u8?expires=1765078483&token=fbec92a4dcc30b082a2a5adc371d6e27390fc759ecf10c466d90d12fa1ff6e25
+https://cdn14.dbfile.cfd/live/cdn14/playlist.m3u8?expires=1765079809&token=69af504e6554e6ccba7d77550b49f8301df94e2482a20e14e9090fed43ef48a4
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Houston Rockets vs Dallas Mavericks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Houston Rockets vs Dallas Mavericks
-https://cdn15.dbfile.cfd/live/cdn15/playlist.m3u8?expires=1765078484&token=a6a3262e7019b6577d388b92c0f5225c8457dc58b094257f1d4eaa5f8e4918bf
+https://cdn15.dbfile.cfd/live/cdn15/playlist.m3u8?expires=1765079794&token=280fa2c34074e409aa87d998f11a41eb1045d95fbd7f7bb76cc4acc5ec0cde6b
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Isaac Cruz vs. Lamont Roach" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Isaac Cruz vs. Lamont Roach
-https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765078478&token=84a0e075df85795e68aa7029a9837ff24559efbe17befaf4bcdce0631cfdb8c4
+https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765079786&token=8d5cb4026593eac28412d73f80a20f9482d6016310449f3cf87ee632d4590e09
