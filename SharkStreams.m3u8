@@ -1,17 +1,25 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765123611&token=9239117262341918360b531f65a2fea3e55f716bb08adbddb4595c697c60edaa
+https://cdn1.apkdb.life/live/cdn1/playlist.m3u8?expires=1765123557&token=b096191b09dc7844e75b3fef05e60c7427158836956df2c6a90b85aae6dd0dfd
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765124861&token=38fc941225ac27cd123b4973695a8afa42116073db4490d8e417dfc6a0fb9a48
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765128261&token=9250baae1e217328e858a6c6625b7d9afd64724e0486f479e2121b0f6ff65172
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC 323:Dvalishvili vs Yan 2" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC 323:Dvalishvili vs Yan 2
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765123647&token=104ba4617bba6eff92bec303ea95fcc02ffd9792efbe14d5e47aedf023c92054
+https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765123477&token=f62267d27ceedcda6b6d29bb86224dc78b1e46b36e96cd2a50c77134619ecb0b
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Orlando Magic vs New York Knicks (Dec 07 - 12:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Orlando Magic vs New York Knicks (Dec 07 - 12:00 PM ET)
-https://cdn14.dbfile.cfd/live/cdn14/playlist.m3u8?expires=1765124864&token=d6959962d8823f6df2f1b6d40d9ad055fdc7de562018c60ce5b72d6b2f1452a4
+https://cdn14.dbfile.cfd/live/cdn14/playlist.m3u8?expires=1765126828&token=416a169e8b391ce71bd788107e775fc0f6c71451173ca5f0695b007aa07b9105
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Indianapolis Colts vs Jacksonville Jaguars (Dec 07 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Indianapolis Colts vs Jacksonville Jaguars (Dec 07 - 01:00 PM ET)
+https://cdn4.dbfile.cfd/live/cdn4/playlist.m3u8?expires=1765126946&token=c495dd47f4b299f3317003e86dfa844bbf5ce1c4f81e8e0831da4d28a683830e
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Pittsburgh Steelers vs Baltimore Ravens (Dec 07 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Pittsburgh Steelers vs Baltimore Ravens (Dec 07 - 01:00 PM ET)
+https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765125967&token=6ce097d27b1e4020425226d0e001728f31e511e5fc9326492eb6c665043fa052
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Seattle Seahawks vs Atlanta Falcons (Dec 07 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Seattle Seahawks vs Atlanta Falcons (Dec 07 - 01:00 PM ET)
+https://cdn8.dbfile.cfd/live/cdn8/playlist.m3u8?expires=1765124440&token=8b3b40e18a92f8cb624359f17f1486ce7135b862c652d9c9e9ffc6310a9ad8df
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Tennessee Titans vs Cleveland Browns (Dec 07 - 01:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Tennessee Titans vs Cleveland Browns (Dec 07 - 01:00 PM ET)
+https://cdn9.dbfile.cfd/live/cdn9/playlist.m3u8?expires=1765128006&token=e64fc8bfbf779b51ffb221616457fb145370df347e1dbf23f2147275c9d29085
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Los Angeles Rams vs Arizona Cardinals (Dec 07 - 04:25 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Los Angeles Rams vs Arizona Cardinals (Dec 07 - 04:25 PM ET)
-https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765124924&token=6aa76b8fc30223812e3f0c0ae52e9037575ba71db6e7d9f2e1b5c5661c5c526f
+https://cdn13.dbfile.cfd/live/cdn13/playlist.m3u8?expires=1765128299&token=e2bae7c10322a36d42210da485a20cb736cec2bdd81d5717957ab61baeb3ab05
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Chicago Bears vs Green Bay Packers (Dec 07 - 04:25 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Chicago Bears vs Green Bay Packers (Dec 07 - 04:25 PM ET)
+https://cdn12.dbfile.cfd/live/cdn12/playlist.m3u8?expires=1765128301&token=504895aa0d2797ba1899b1e65f3a647b8af4abdae9bdc50205f2fbbf9c639190
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Denver Nuggets vs Charlotte Hornets (Dec 07 - 06:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Denver Nuggets vs Charlotte Hornets (Dec 07 - 06:00 PM ET)
-https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765124932&token=b06e649716cd4ab582e4840b82552679ecdde3010dbaa03ba6348a0f42b0ac28
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Lakers vs Philadelphia 76ers (Dec 07 - 07:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Lakers vs Philadelphia 76ers (Dec 07 - 07:30 PM ET)
-https://cdn6.dbfile.cfd/live/cdn6/playlist.m3u8?expires=1765124947&token=df7b0939030741c3d0369e0df62a6777a78aa6549128604fd67183512eeb3f1e
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Houston Texans vs Kansas City Chiefs (Dec 07 - 08:20 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Houston Texans vs Kansas City Chiefs (Dec 07 - 08:20 PM ET)
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765124955&token=490a9adf948d9cc55568b7f22c2ca8d930e5bc05e4405538741927d9b5b255a6
+https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765128303&token=b3973f4b0c75578f60e2b7bda170c0683f0d705dd523d2c4b51bcd32e38772c7
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Oklahoma City Thunder vs Utah Jazz (Dec 07 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Oklahoma City Thunder vs Utah Jazz (Dec 07 - 08:00 PM ET)
+https://cdn7.dbfile.cfd/live/cdn7/playlist.m3u8?expires=1765128321&token=b98361bd1c55a1faaa3d42e8990e90fb9c70ee708e4f77d3a076e0da21719c06
