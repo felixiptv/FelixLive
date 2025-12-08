@@ -1,48 +1,48 @@
 import asyncio
 from playwright.async_api import async_playwright
 import aiohttp
-from datetime import datetime
-import re
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+import time
+import html
 
+# --- 🎨 VISUALS ---
+class Col:
+    CYAN = "\033[96m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    RESET = "\033[0m"
+    BOLD = "\033[1m"
+    DIM = "\033[2m"
+
+def print_banner():
+    print(f"\n{Col.CYAN}{'='*60}{Col.RESET}")
+    print(f"🚀  {Col.BOLD}PPV.TO LIVE INTERCEPTOR (REAL LIVE NOW){Col.RESET}")
+    print(f"{Col.CYAN}{'='*60}{Col.RESET}\n")
+
+# --- CONFIG ---
 API_URL = "https://api.ppv.to/api/streams"
+PLAYLIST_FILE = "PPVLand.m3u8"
 
-CUSTOM_HEADERS = [
-    '#EXTVLCOPT:http-origin=https://ppv.to',
+STREAM_HEADERS = [
     '#EXTVLCOPT:http-referrer=https://ppv.to/',
-    '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0'
+    '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
 ]
 
-ALLOWED_CATEGORIES = {
-    "24/7 Streams", "Wrestling", "Football", "Basketball", "Baseball",
-    "Combat Sports", "American Football", "Darts", "Motorsports", "Ice Hockey"
-}
-
-CATEGORY_LOGOS = {
-    "24/7 Streams": "http://drewlive24.duckdns.org:9000/Logos/247.png",
-    "Wrestling": "http://drewlive24.duckdns.org:9000/Logos/Wrestling.png",
-    "Football": "http://drewlive24.duckdns.org:9000/Logos/Football.png",
-    "Basketball": "http://drewlive24.duckdns.org:9000/Logos/Basketball.png",
-    "Baseball": "http://drewlive24.duckdns.org:9000/Logos/Baseball.png",
-    "American Football": "http://drewlive24.duckdns.org:9000/Logos/NFL3.png",
-    "Combat Sports": "http://drewlive24.duckdns.org:9000/Logos/CombatSports2.png",
-    "Darts": "http://drewlive24.duckdns.org:9000/Logos/Darts.png",
-    "Motorsports": "http://drewlive24.duckdns.org:9000/Logos/Motorsports2.png",
-    "Live Now": "http://drewlive24.duckdns.org:9000/Logos/DrewLiveSports.png",
-    "Ice Hockey": "http://drewlive24.duckdns.org:9000/Logos/Hockey.png"
-}
-
-CATEGORY_TVG_IDS = {
-    "24/7 Streams": "24.7.Dummy.us",
-    "Wrestling": "PPV.EVENTS.Dummy.us",
-    "Football": "Soccer.Dummy.us",
-    "Basketball": "Basketball.Dummy.us",
-    "Baseball": "MLB.Baseball.Dummy.us",
-    "American Football": "NFL.Dummy.us",
-    "Combat Sports": "PPV.EVENTS.Dummy.us",
-    "Darts": "Darts.Dummy.us",
-    "Motorsports": "Racing.Dummy.us",
-    "Live Now": "24.7.Dummy.us",
-    "Ice Hockey": "NHL.Hockey.Dummy.us"
+BACKUP_LOGOS = {
+    "24/7 Streams": "http://drewlive2423.duckdns.org:9000/Logos/247.png",
+    "Wrestling": "http://drewlive2423.duckdns.org:9000/Logos/Wrestling.png",
+    "Football": "http://drewlive2423.duckdns.org:9000/Logos/Football.png",
+    "Basketball": "http://drewlive2423.duckdns.org:9000/Logos/Basketball.png",
+    "Baseball": "http://drewlive2423.duckdns.org:9000/Logos/Baseball.png",
+    "American Football": "http://drewlive2423.duckdns.org:9000/Logos/NFL3.png",
+    "Combat Sports": "http://drewlive2423.duckdns.org:9000/Logos/CombatSports2.png",
+    "Darts": "http://drewlive2423.duckdns.org:9000/Logos/Darts.png",
+    "Motorsports": "http://drewlive2423.duckdns.org:9000/Logos/Motorsports2.png",
+    "Live Now": "http://drewlive2423.duckdns.org:9000/Logos/DrewLiveSports.png",
+    "Ice Hockey": "http://drewlive2423.duckdns.org:9000/Logos/Hockey.png",
+    "Cricket": "http://drewlive2423.duckdns.org:9000/Logos/Cricket.png",
 }
 
 GROUP_RENAME_MAP = {
@@ -56,206 +56,184 @@ GROUP_RENAME_MAP = {
     "Darts": "PPVLand - Darts",
     "Motorsports": "PPVLand - Racing Action",
     "Live Now": "PPVLand - Live Now",
-    "Ice Hockey": "PPVLand - NHL Action"
+    "Ice Hockey": "PPVLand - NHL Action",
+    "Cricket": "PPVLand - Cricket"
 }
 
-NFL_TEAMS = {...}  # (same as your original)
-COLLEGE_TEAMS = {...}  # (same as your original)
+ICONS = {
+    "American Football": "🏈", "Basketball": "🏀", "Ice Hockey": "🏒",
+    "Baseball": "⚾", "Combat Sports": "🥊", "Wrestling": "🤼",
+    "Football": "⚽", "Motorsports": "🏎️", "Darts": "🎯",
+    "Live Now": "📡", "24/7 Streams": "📺", "default": "📺"
+}
 
+def get_icon(name):
+    return ICONS.get(name, ICONS["default"])
 
-# 🔥 NEW FALLBACK URL BUILDER
-def build_poocloud_fallback(iframe_url):
-    """Build fallback: https://gg.poocloud.in/<streamname>/index.m3u8"""
+def get_display_time(timestamp):
+    if not timestamp or timestamp <= 0:
+        return ""
     try:
-        match = re.search(r"/([^/]+)/\d+$", iframe_url)
-        if not match:
-            return None
-        stream_name = match.group(1)
-        return f"https://gg.poocloud.in/{stream_name}/index.m3u8"
+        dt_utc = datetime.fromtimestamp(timestamp, tz=timezone.utc)
+        dt_est = dt_utc.astimezone(ZoneInfo("America/New_York"))
+        dt_mt  = dt_utc.astimezone(ZoneInfo("America/Denver"))
+        dt_uk  = dt_utc.astimezone(ZoneInfo("Europe/London"))
+        return f"{dt_est.strftime('%I:%M %p ET')} / {dt_mt.strftime('%I:%M %p MT')} / {dt_uk.strftime('%H:%M UK')}"
     except:
-        return None
+        return ""
 
-
-# CHECK M3U8
-async def check_m3u8_url(url, referer):
+# SCRAPING HELPERS
+async def safe_grab(page, iframe_url, timeout=8):
     try:
-        origin = "https://" + referer.split('/')[2]
-        headers = {
-            "User-Agent": "Mozilla/5.0",
-            "Referer": referer,
-            "Origin": origin
-        }
-        timeout = aiohttp.ClientTimeout(total=15)
-        async with aiohttp.ClientSession(timeout=timeout) as session:
-            async with session.get(url, headers=headers) as resp:
-                return resp.status in [200, 403]
-    except:
-        return False
+        return await asyncio.wait_for(grab_m3u8_from_iframe(page, iframe_url), timeout=timeout)
+    except asyncio.TimeoutError:
+        return set()
 
-
-# FETCH STREAM LIST FROM API
-async def get_streams():
-    try:
-        timeout = aiohttp.ClientTimeout(total=30)
-        headers = {"User-Agent": "Mozilla/5.0"}
-        async with aiohttp.ClientSession(timeout=timeout, headers=headers) as session:
-            async with session.get(API_URL) as resp:
-                if resp.status != 200:
-                    return None
-                return await resp.json()
-    except:
-        return None
-
-
-# PLAYWRIGHT M3U8 CATCHER
 async def grab_m3u8_from_iframe(page, iframe_url):
-    found_streams = set()
+    first_url = None
+
+    await page.route("**/*", lambda route: (
+        route.abort() if route.request.resource_type in ["image","stylesheet","font","media"]
+        else route.continue_()
+    ))
 
     def handle_response(response):
-        if ".m3u8" in response.url:
-            found_streams.add(response.url)
+        nonlocal first_url
+        if ".m3u8" in response.url and first_url is None:
+            first_url = response.url
 
     page.on("response", handle_response)
 
     try:
-        await page.goto(iframe_url, timeout=30000)
+        await page.goto(iframe_url, timeout=6000, wait_until="domcontentloaded")
     except:
-        return set()
+        pass
 
-    await page.wait_for_timeout(5000)
-    await asyncio.sleep(8)
+    for _ in range(120):
+        if first_url:
+            break
+        await asyncio.sleep(0.05)
 
-    page.remove_listener("response", handle_response)
+    return {first_url} if first_url else set()
 
-    if not found_streams:
-        return set()
-
-    # Validate
-    valid = set()
-    checks = [check_m3u8_url(url, iframe_url) for url in found_streams]
-    results = await asyncio.gather(*checks)
-
-    for u, ok in zip(found_streams, results):
-        if ok:
-            valid.add(u)
-
-    return valid
-
-
-# SCRAPE 'LIVE NOW'
-async def grab_live_now_from_html(page, base_url="https://ppv.to/"):
-    live_now = []
-    await page.goto(base_url)
-    await asyncio.sleep(3)
-
-    cards = await page.query_selector_all("#livecards a.item-card")
-    for card in cards:
-        href = await card.get_attribute("href")
-        name_el = await card.query_selector(".card-title")
-        poster_el = await card.query_selector("img.card-img-top")
-
-        name = await name_el.inner_text() if name_el else "Live"
-        poster = await poster_el.get_attribute("src") if poster_el else None
-        iframe = f"{base_url.rstrip('/')}{href}"
-
-        live_now.append({
-            "name": name.strip(),
-            "iframe": iframe,
-            "category": "Live Now",
-            "poster": poster
-        })
-
-    return live_now
-
-
-# BUILD M3U
-def build_m3u(streams, url_map):
-    lines = ['#EXTM3U']
-    seen = set()
-
-    for s in streams:
-        key = f"{s['name']}::{s['category']}::{s['iframe']}"
-        urls = url_map.get(key, [])
-
-        if not urls:
-            continue
-
-        url = next(iter(urls))
-
-        lines.append(f'#EXTINF:-1 group-title="{s["category"]}",{s["name"]}')
-        lines.extend(CUSTOM_HEADERS)
-        lines.append(url)
-
-    return "\n".join(lines)
-
+async def get_streams():
+    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        async with aiohttp.ClientSession(headers=headers) as session:
+            resp = await session.get(API_URL, timeout=30)
+            if resp.status != 200:
+                print(f"{Col.RED}❌ API Error {resp.status}{Col.RESET}")
+                return []
+            data = await resp.json()
+            return data.get("streams", [])
+    except Exception as e:
+        print(f"{Col.RED}❌ API Fetch Error: {e}{Col.RESET}")
+        return []
 
 # MAIN
 async def main():
-    data = await get_streams()
-    if not data or "streams" not in data:
-        print("No API data")
+    start_time = time.time()
+    print_banner()
+
+    categories = await get_streams()
+    if not categories:
+        print(f"{Col.RED}❌ No categories received{Col.RESET}")
         return
 
+    now_ts = int(time.time())
     streams = []
-    for cat in data["streams"]:
-        category = cat["category"]
-        for stream in cat["streams"]:
-            streams.append({
-                "name": stream["name"],
-                "iframe": stream["iframe"],
-                "category": category,
-                "poster": stream.get("poster")
-            })
 
-    # REMOVE DUPES
-    unique = {}
-    for s in streams:
-        unique[s["name"].lower()] = s
-    streams = list(unique.values())
+    # flatten
+    for cat_obj in categories:
+        original_cat = cat_obj.get("category", "")
+        cat_always_live = cat_obj.get("always_live") == 1
+
+        for s in cat_obj.get("streams", []):
+            starts_at = s.get("starts_at", 0)
+            is_live_event = (starts_at > 0 and starts_at <= now_ts)
+            stream_always_live = s.get("always_live") == 1
+
+            final_category = original_cat
+            if not cat_always_live and not stream_always_live and is_live_event:
+                final_category = "Live Now"
+
+            if s.get("iframe"):
+                streams.append({
+                    "id": s.get("id"),
+                    "name": s.get("name"),
+                    "iframe": s.get("iframe"),
+                    "category": final_category,
+                    "poster": s.get("poster"),
+                    "starts_at": starts_at,
+                    "ends_at": s.get("ends_at"),
+                    "clock_time": get_display_time(starts_at)
+                })
+
+    streams.sort(key=lambda x: x["starts_at"] or 0)
+    valid_streams = []
 
     async with async_playwright() as p:
         browser = await p.firefox.launch(headless=True)
-        page = await browser.new_page()
+        total = len(streams)
 
-        url_map = {}
+        for idx, s in enumerate(streams, start=1):
+            page = await browser.new_page()
 
-        for s in streams:
-            key = f"{s['name']}::{s['category']}::{s['iframe']}"
-            print(f"Scraping → {s['name']}")
+            icon = get_icon(s["category"])
+            print(f"[{idx}/{total}] {Col.YELLOW}Scanning:{Col.RESET} {icon} {s['name']} [{s['category']}]")
 
-            urls = await grab_m3u8_from_iframe(page, s["iframe"])
+            urls = await safe_grab(page, s["iframe"])
+            await page.close()
 
-            # 🔥 FALLBACK HERE
-            if not urls:
-                fallback = build_poocloud_fallback(s["iframe"])
-                if fallback:
-                    print(f"⚠️ Using fallback: {fallback}")
-                    urls = {fallback}
+            if urls:
+                found = next(iter(urls))
+                print(f"   {Col.GREEN}⚡ FOUND:{Col.RESET} {found}")
 
-            url_map[key] = urls
+                final_logo = s.get("poster") or BACKUP_LOGOS.get(s["category"], "")
 
-        # PROCESS LIVE NOW
-        live_now = await grab_live_now_from_html(page)
-        streams.extend(live_now)
-
-        for s in live_now:
-            key = f"{s['name']}::{s['category']}::{s['iframe']}"
-            urls = await grab_m3u8_from_iframe(page, s["iframe"])
-
-            if not urls:
-                fallback = build_poocloud_fallback(s["iframe"])
-                if fallback:
-                    urls = {fallback}
-
-            url_map[key] = urls
+                valid_streams.append({
+                    "id": s["id"],
+                    "name": s["name"],
+                    "category": s["category"],
+                    "poster": final_logo,
+                    "starts_at": s["starts_at"],
+                    "ends_at": s["ends_at"],
+                    "url": found,
+                    "time": s["clock_time"]
+                })
+            else:
+                print(f"   {Col.DIM}❌ Signal Lost{Col.RESET}")
 
         await browser.close()
 
-    playlist = build_m3u(streams, url_map)
-    with open("PPVLand.m3u8", "w", encoding="utf-8") as f:
-        f.write(playlist)
+    # SAVE PLAYLIST
+    print(f"\n{Col.YELLOW}💾 Saving playlist to {PLAYLIST_FILE}...{Col.RESET}")
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for item in valid_streams:
+            tvg_id = f"ppv-{item['id']}"
+            group_title = GROUP_RENAME_MAP.get(item["category"], item["category"])
 
-    print("Playlist saved!")
+            clean_title = item["name"]
+            if item["time"]:
+                clean_title += f" - {item['time']}"
+
+            f.write(
+                f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{item["name"]}" '
+                f'tvg-logo="{item["poster"]}" group-title="{group_title}",{clean_title}\n'
+            )
+
+            for h in STREAM_HEADERS:
+                f.write(h + "\n")
+
+            f.write(item["url"] + "\n")
+
+    print(f"\n{Col.CYAN}{'='*60}{Col.RESET}")
+    print(f"✅ {Col.BOLD}MISSION COMPLETE{Col.RESET}")
+    print(f"📊 {Col.BOLD}WORKING STREAMS:{Col.RESET} {len(valid_streams)} / {total}")
+    print(f"⏱️ {Col.BOLD}TIME:{Col.RESET} {time.time()-start_time:.2f}s")
+    print(f"📺 Playlist: {PLAYLIST_FILE}")
+    print(f"{Col.CYAN}{'='*60}{Col.RESET}")
 
 
 if __name__ == "__main__":
