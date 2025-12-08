@@ -26,7 +26,7 @@ API_URL = "https://api.ppv.to/api/streams"
 PLAYLIST_FILE = "PPVLand.m3u8"
 
 STREAM_HEADERS = [
-    '#EXTVLCOPT:http-origin=https://ppv.to/'
+    '#EXTVLCOPT:http-origin=https://ppv.to/',
     '#EXTVLCOPT:http-referrer=https://ppv.to/',
     '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/143.0'
 ]
