@@ -1,9 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765220772&token=ed22815628cefb74310a95aeaedf09ee79b5878befe6087dcc012099f7cf31e0
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765225736&token=2a7a1204bc3cbd80ec23ae44d43cce6a9d7fca66e8450c49e3d56b185374979e
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765221901&token=7c456853c6c810b90a57a94a7ad840d728f64be08ecafe7d025129bc7342cfe1
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Indiana Pacers (Dec 08 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Indiana Pacers (Dec 08 - 07:00 PM ET)
-https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765221903&token=62c03900332ca00e197ff724287b392c34649bdfb008195d57440075f3a20e12
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765225738&token=fcb78fb24011794c155d9ecd23ed48b7eb76b156ee6119d32612eacd14c7ea21
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Philadelphia Eagles vs Los Angeles Chargers (Dec 08 - 08:15 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Philadelphia Eagles vs Los Angeles Chargers (Dec 08 - 08:15 PM ET)
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765220092&token=2e8270bd32876d4f2614bc9dbb424459a470e5a227ce219777e9b8086ae1e304
+https://cdn2.dbfile.cfd/live/cdn2/playlist.m3u8?expires=1765220247&token=75ae3afdbc8adee5b03df0f56fc67796479f729a86d642b3d940e8a42457dc0a
