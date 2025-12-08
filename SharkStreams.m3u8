@@ -1,7 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765213009&token=88e3320462a3cc82f7839ac42bbedc92d1bf62f7c1bab31070e9fe4d6e9a5f26
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765212823&token=471b064df9dc50a124112ab93e897a0d1cf69a0932aa9f3c63927b9069fab000
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765214901&token=d036018dc7d3e26177900d5e9b29acd5f6063b213fbd35f3f0e3aa3f4d8bbfa7
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765218840&token=cdfd30029cd76b1ee0ea702ed3b53a8406a0dcd2bbcd2cf4981aee1156fe58c6
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Indiana Pacers (Dec 08 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Indiana Pacers (Dec 08 - 07:00 PM ET)
+https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765218841&token=de68e3890ae14a95dc89041375151f11cc138f98dd5ebc5e0646f956eef8eb76
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Minnesota Timberwolves (Dec 08 - 07:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Minnesota Timberwolves (Dec 08 - 07:30 PM ET)
+https://cdn4.dbfile.cfd/live/cdn4/playlist.m3u8?expires=1765218842&token=449b8837b427a00322cd00f80f92ff20ed4c1a6ac41357568035ab5e29806c66
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Philadelphia Eagles vs Los Angeles Chargers (Dec 08 - 08:15 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Philadelphia Eagles vs Los Angeles Chargers (Dec 08 - 08:15 PM ET)
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765212983&token=19ab43a5d23209bd8a3bbef9bb48d6c89a4ad202be9902e88f2321d20b221d4e
+https://cdn2.dbfile.cfd/live/cdn2/playlist.m3u8?expires=1765212903&token=b64f47c19a10f38fd7e400e5170112cd50457573a30c048e43de2efc076c1a62
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs New Orleans Pelicans (Dec 08 - 09:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs New Orleans Pelicans (Dec 08 - 09:30 PM ET)
+https://cdn5.dbfile.cfd/live/cdn5/playlist.m3u8?expires=1765218844&token=e9d2a7f7d18db486a06c2a613789f6b11d2cfecad3b134630f40748b6f24b474
