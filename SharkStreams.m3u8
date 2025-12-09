@@ -1,13 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765220134&token=649692bb6d53f72cdfee00e4d5fee5f8c4fb2290e81fa28231cd669d2372dbe0
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765243822&token=ebadbd6b794e9f29e71d7f9c088543d03822588db413bd1e8f3d2333e0bada5a
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765225738&token=fcb78fb24011794c155d9ecd23ed48b7eb76b156ee6119d32612eacd14c7ea21
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765244465&token=43040f7ad7b223491db3fa6118c18d05724ad8ef2e191172769ec0e9d8cbd29c
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Sacramento Kings vs Indiana Pacers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Sacramento Kings vs Indiana Pacers
-https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765225740&token=9e766b39cd643863224136490c0ed4411a421a1b40f628d7293ae1b316b56711
+https://cdn3.dbfile.cfd/live/cdn3/playlist.m3u8?expires=1765243801&token=69ce3db15d59ad82d540f72da71cf6d14389bc061b131adadfae56f6c52a02cc
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Minnesota Timberwolves" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Minnesota Timberwolves
-https://cdn4.dbfile.cfd/live/cdn4/playlist.m3u8?expires=1765225745&token=d645cbb64ab78a4902f41e600a438ac2ac2954a4d85e60a545ef6bda1f3d3481
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Philadelphia Eagles vs Los Angeles Chargers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Philadelphia Eagles vs Los Angeles Chargers
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765220247&token=c8939442512b56c5c5005caf9817acdc9464d6750aef38dc603ebf55091686b8
+https://cdn4.dbfile.cfd/live/cdn4/playlist.m3u8?expires=1765243804&token=327f927d539bbac16dee81a7f5610aa33b6fdb89465160fc6b1ba617ad471441
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs New Orleans Pelicans" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs New Orleans Pelicans
-https://cdn5.dbfile.cfd/live/cdn5/playlist.m3u8?expires=1765225752&token=0dff0959f86a48543aab0bce393abc5cbd984fd0ffef1aa058b85a94dedd7951
+https://cdn5.dbfile.cfd/live/cdn5/playlist.m3u8?expires=1765243821&token=e93f1344ac28d2ed2a415f0f1faf2da51a466720013a5312c84e0efcd5f84d76
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Philadelphia Eagles vs Los Angeles Chargers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Philadelphia Eagles vs Los Angeles Chargers
+https://cdn2.dbfile.cfd/live/cdn2/playlist.m3u8?expires=1765243800&token=59c2ab4875a4bc86223ba3bbff2c57dabe3250eba20d9196d7bfc361d9b17226
