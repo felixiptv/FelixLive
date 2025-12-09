@@ -1,5 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765314895&token=d4f54cd270eaa98a15bdb9a039e2ba49c98a143abd1a72d1b509dac5b4d3af72
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765316257&token=278387ca3d3f44a66bab153eaa86eaf07e23f16eaf12151b5a20995d853a5824
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765315523&token=42a0647eef306597aaae4fd87fc4b2f71e7290f1a7f5b0cd6e16cce89bc2fb5a
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765319268&token=9eed6da27d674690345304d1d199655ad521db640477fb8ed6894dbb98083727
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Miami Heat  vs  Orlando Magic (Dec 09 - 06:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Miami Heat  vs  Orlando Magic (Dec 09 - 06:00 PM ET)
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765317770&token=5e8a29e808e51de16fa4c1e1299f899ff410f113d85113865f8e3df9d588f863
