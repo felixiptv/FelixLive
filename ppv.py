@@ -1,30 +1,29 @@
-#!/usr/bin/env python3
-"""
-PPV.TO HIGH-CAPTURE MODE — FINALIZED
-
-- Initial capture (fast, MAX_WAIT_INITIAL=8s)
-- Retry missing streams with longer wait (MAX_WAIT_RETRY=15s)
-- Safe f-string handling (backslash issue fixed)
-- Builds full M3U8 playlist
-"""
 import asyncio
 from playwright.async_api import async_playwright
 import aiohttp
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import time
-import re
-from typing import List, Dict
+import html
 
-# -------- CONFIG ----------
+# --- 🎨 VISUALS ---
+class Col:
+    CYAN = "\033[96m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    RESET = "\033[0m"
+    BOLD = "\033[1m"
+    DIM = "\033[2m"
+
+def print_banner():
+    print(f"\n{Col.CYAN}{'='*60}{Col.RESET}")
+    print(f"🚀  {Col.BOLD}PPV.TO LIVE INTERCEPTOR (REAL LIVE NOW){Col.RESET}")
+    print(f"{Col.CYAN}{'='*60}{Col.RESET}\n")
+
+# --- CONFIG ---
 API_URL = "https://api.ppv.to/api/streams"
 PLAYLIST_FILE = "PPVLand.m3u8"
-HEADLESS = True
-
-CAPTURE_CONCURRENCY = 3
-MAX_WAIT_INITIAL = 8.0
-MAX_WAIT_RETRY = 15.0
-RETRY_CONCURRENCY = 2
 
 STREAM_HEADERS = [
     '#EXTVLCOPT:http-origin=https://ppv.to',
@@ -44,7 +43,7 @@ BACKUP_LOGOS = {
     "Motorsports": "http://drewlive2423.duckdns.org:9000/Logos/Motorsports2.png",
     "Live Now": "http://drewlive2423.duckdns.org:9000/Logos/DrewLiveSports.png",
     "Ice Hockey": "http://drewlive2423.duckdns.org:9000/Logos/Hockey.png",
-    "default": "http://drewlive2423.duckdns.org:9000/Logos/Default.png"
+    "Cricket": "http://drewlive2423.duckdns.org:9000/Logos/Cricket.png",
 }
 
 GROUP_RENAME_MAP = {
@@ -58,180 +57,185 @@ GROUP_RENAME_MAP = {
     "Darts": "PPVLand - Darts",
     "Motorsports": "PPVLand - Racing Action",
     "Live Now": "PPVLand - Live Now",
-    "Ice Hockey": "PPVLand - NHL Action"
+    "Ice Hockey": "PPVLand - NHL Action",
+    "Cricket": "PPVLand - Cricket"
 }
 
-ICONS = {"American Football":"🏈","Basketball":"🏀","Ice Hockey":"🏒","Baseball":"⚾",
-         "Combat Sports":"🥊","Wrestling":"🤼","Football":"⚽","Motorsports":"🏎️",
-         "Darts":"🎯","Live Now":"📡","24/7 Streams":"📺","default":"📺"}
+ICONS = {
+    "American Football": "🏈", "Basketball": "🏀", "Ice Hockey": "🏒",
+    "Baseball": "⚾", "Combat Sports": "🥊", "Wrestling": "🤼",
+    "Football": "⚽", "Motorsports": "🏎️", "Darts": "🎯",
+    "Live Now": "📡", "24/7 Streams": "📺", "default": "📺"
+}
 
-def get_icon(name): return ICONS.get(name, ICONS["default"])
+def get_icon(name):
+    return ICONS.get(name, ICONS["default"])
 
-def pretty_time(ts):
-    if not ts:
+def get_display_time(timestamp):
+    if not timestamp or timestamp <= 0:
         return ""
     try:
-        dt_utc = datetime.fromtimestamp(int(ts), tz=timezone.utc)
+        dt_utc = datetime.fromtimestamp(timestamp, tz=timezone.utc)
         dt_est = dt_utc.astimezone(ZoneInfo("America/New_York"))
         dt_mt  = dt_utc.astimezone(ZoneInfo("America/Denver"))
         dt_uk  = dt_utc.astimezone(ZoneInfo("Europe/London"))
-        return f"{dt_est:%I:%M %p ET} / {dt_mt:%I:%M %p MT} / {dt_uk:%H:%M UK}"
-    except Exception:
+        return f"{dt_est.strftime('%I:%M %p ET')} / {dt_mt.strftime('%I:%M %p MT')} / {dt_uk.strftime('%H:%M UK')}"
+    except:
         return ""
 
-async def fetch_api_streams():
-    timeout = aiohttp.ClientTimeout(total=20)
-    headers = {"User-Agent": "Mozilla/5.0"}
+# SCRAPING HELPERS
+async def safe_grab(page, iframe_url, timeout=8):
     try:
-        async with aiohttp.ClientSession(timeout=timeout, headers=headers) as s:
-            async with s.get(API_URL) as r:
-                if r.status != 200:
-                    print(f"❌ API returned {r.status}")
-                    return []
-                data = await r.json()
-                return data.get("streams", [])
-    except Exception as e:
-        print("❌ API fetch error:", e)
-        return []
+        return await asyncio.wait_for(grab_m3u8_from_iframe(page, iframe_url), timeout=timeout)
+    except asyncio.TimeoutError:
+        return set()
 
-async def capture_m3u8(page, iframe_url, max_wait=MAX_WAIT_INITIAL):
-    found = None
+async def grab_m3u8_from_iframe(page, iframe_url):
+    first_url = None
 
-    async def route_handler(route):
-        if route.request.resource_type in ("image","stylesheet","font","media"):
-            await route.abort()
-        else:
-            await route.continue_()
+    await page.route("**/*", lambda route: (
+        route.abort() if route.request.resource_type in ["image","stylesheet","font","media"]
+        else route.continue_()
+    ))
 
-    def handle_response(resp):
-        nonlocal found
-        if ".m3u8" in resp.url and not found:
-            found = resp.url
+    def handle_response(response):
+        nonlocal first_url
+        if ".m3u8" in response.url and first_url is None:
+            first_url = response.url
 
     page.on("response", handle_response)
-    await page.route("**/*", route_handler)
 
     try:
-        await page.goto(iframe_url, timeout=15000, wait_until="domcontentloaded")
+        await page.goto(iframe_url, timeout=6000, wait_until="domcontentloaded")
     except:
         pass
 
-    waited = 0.0
-    step = 0.1
-    while waited < max_wait and not found:
-        await asyncio.sleep(step)
-        waited += step
+    for _ in range(120):
+        if first_url:
+            break
+        await asyncio.sleep(0.05)
 
-    page.remove_listener("response", handle_response)
+    return {first_url} if first_url else set()
+
+async def get_streams():
+    headers = {"User-Agent": "Mozilla/5.0"}
     try:
-        await page.unroute("**/*", route_handler)
-    except:
-        pass
-    return found
+        async with aiohttp.ClientSession(headers=headers) as session:
+            resp = await session.get(API_URL, timeout=30)
+            if resp.status != 200:
+                print(f"{Col.RED}❌ API Error {resp.status}{Col.RESET}")
+                return []
+            data = await resp.json()
+            return data.get("streams", [])
+    except Exception as e:
+        print(f"{Col.RED}❌ API Fetch Error: {e}{Col.RESET}")
+        return []
 
-def build_playlist(entries: List[Dict]):
-    lines = ["#EXTM3U"]
-    seen = set()
-    for e in entries:
-        key = (e["name"].lower().strip(), e["category"])
-        if key in seen:
-            continue
-        seen.add(key)
-
-        clean_name = re.sub(r'\W+', '', e['name']).lower()
-        tvg_id = f"ppv-{clean_name}"[:64]
-
-        logo = e.get("poster") or BACKUP_LOGOS.get(e["category"], BACKUP_LOGOS["default"])
-        group = GROUP_RENAME_MAP.get(e["category"], e["category"])
-        display = pretty_time(e.get("starts_at"))
-        title = f"{e['name']} - {display}" if display else e["name"]
-
-        lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{e["name"]}" tvg-logo="{logo}" group-title="{group}",{title}')
-        for h in STREAM_HEADERS:
-            lines.append(h)
-        lines.append(e["url"])
-    return "\n".join(lines)
-
+# MAIN
 async def main():
-    t0 = time.time()
-    print("\n=== PPV.TO HIGH-CAPTURE MODE — FINALIZED ===\n")
+    start_time = time.time()
+    print_banner()
 
-    api_streams = await fetch_api_streams()
-    if not api_streams:
-        print("❌ No API data. Exiting.")
+    categories = await get_streams()
+    if not categories:
+        print(f"{Col.RED}❌ No categories received{Col.RESET}")
         return
 
-    now = int(time.time())
-    candidates = []
-    for cat in api_streams:
-        cat_name = cat.get("category", "Misc")
-        for s in cat.get("streams", []):
-            iframe = s.get("iframe")
-            if iframe:
-                starts = s.get("starts_at") or 0
-                final_cat = "Live Now" if (starts > 0 and starts <= now) else cat_name
-                candidates.append({
-                    "name": s.get("name") or "Unnamed Event",
-                    "iframe": iframe,
-                    "category": final_cat,
+    now_ts = int(time.time())
+    streams = []
+
+    # flatten
+    for cat_obj in categories:
+        original_cat = cat_obj.get("category", "")
+        cat_always_live = cat_obj.get("always_live") == 1
+
+        for s in cat_obj.get("streams", []):
+            starts_at = s.get("starts_at", 0)
+            is_live_event = (starts_at > 0 and starts_at <= now_ts)
+            stream_always_live = s.get("always_live") == 1
+
+            final_category = original_cat
+            if not cat_always_live and not stream_always_live and is_live_event:
+                final_category = "Live Now"
+
+            if s.get("iframe"):
+                streams.append({
+                    "id": s.get("id"),
+                    "name": s.get("name"),
+                    "iframe": s.get("iframe"),
+                    "category": final_category,
                     "poster": s.get("poster"),
-                    "starts_at": starts
+                    "starts_at": starts_at,
+                    "ends_at": s.get("ends_at"),
+                    "clock_time": get_display_time(starts_at)
                 })
 
+    streams.sort(key=lambda x: x["starts_at"] or 0)
+    valid_streams = []
+
     async with async_playwright() as p:
-        browser = await p.firefox.launch(headless=HEADLESS)
-        context = await browser.new_context()
+        browser = await p.firefox.launch(headless=True)
+        total = len(streams)
 
-        cap_sem = asyncio.Semaphore(CAPTURE_CONCURRENCY)
-        results = []
-        failed = []
+        for idx, s in enumerate(streams, start=1):
+            page = await browser.new_page()
 
-        async def worker(item, wait_time=MAX_WAIT_INITIAL):
-            async with cap_sem:
-                page = await context.new_page()
-                url = await capture_m3u8(page, item["iframe"], max_wait=wait_time)
-                await page.close()
-                if url:
-                    results.append({**item, "url": url})
-                    print(f"✔ Captured: {item['name']}")
-                else:
-                    failed.append(item)
-                    print(f"✖ Failed: {item['name']}")
+            icon = get_icon(s["category"])
+            print(f"[{idx}/{total}] {Col.YELLOW}Scanning:{Col.RESET} {icon} {s['name']} [{s['category']}]")
 
-        # --- Initial capture ---
-        await asyncio.gather(*(worker(it) for it in candidates))
+            urls = await safe_grab(page, s["iframe"])
+            await page.close()
 
-        print(f"\n⚡ Initial capture complete. Found {len(results)} streams.")
-        print(f"⏱ {len(failed)} streams failed, retrying with longer wait...\n")
+            if urls:
+                found = next(iter(urls))
+                print(f"   {Col.GREEN}⚡ FOUND:{Col.RESET} {found}")
 
-        # --- Retry failed streams ---
-        retry_sem = asyncio.Semaphore(RETRY_CONCURRENCY)
-        retry_results = []
+                final_logo = s.get("poster") or BACKUP_LOGOS.get(s["category"], "")
 
-        async def retry_worker(item):
-            async with retry_sem:
-                page = await context.new_page()
-                url = await capture_m3u8(page, item["iframe"], max_wait=MAX_WAIT_RETRY)
-                await page.close()
-                if url:
-                    retry_results.append({**item, "url": url})
-                    print(f"✔ Retry success: {item['name']}")
-                else:
-                    print(f"✖ Retry failed: {item['name']}")
+                valid_streams.append({
+                    "id": s["id"],
+                    "name": s["name"],
+                    "category": s["category"],
+                    "poster": final_logo,
+                    "starts_at": s["starts_at"],
+                    "ends_at": s["ends_at"],
+                    "url": found,
+                    "time": s["clock_time"]
+                })
+            else:
+                print(f"   {Col.DIM}❌ Signal Lost{Col.RESET}")
 
-        await asyncio.gather(*(retry_worker(it) for it in failed))
-
-        results.extend(retry_results)
         await browser.close()
 
-    playlist = build_playlist(results)
-    with open(PLAYLIST_FILE, "w", encoding="utf-8") as fh:
-        fh.write(playlist)
+    # SAVE PLAYLIST
+    print(f"\n{Col.YELLOW}💾 Saving playlist to {PLAYLIST_FILE}...{Col.RESET}")
+    with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for item in valid_streams:
+            tvg_id = f"ppv-{item['id']}"
+            group_title = GROUP_RENAME_MAP.get(item["category"], item["category"])
 
-    print("\n✅ Done.")
-    print(f"Streams captured: {len(results)} / {len(candidates)}")
-    print(f"Playlist: {PLAYLIST_FILE}")
-    print(f"Elapsed: {time.time()-t0:.2f}s\n")
+            clean_title = item["name"]
+            if item["time"]:
+                clean_title += f" - {item['time']}"
+
+            f.write(
+                f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{item["name"]}" '
+                f'tvg-logo="{item["poster"]}" group-title="{group_title}",{clean_title}\n'
+            )
+
+            for h in STREAM_HEADERS:
+                f.write(h + "\n")
+
+            f.write(item["url"] + "\n")
+
+    print(f"\n{Col.CYAN}{'='*60}{Col.RESET}")
+    print(f"✅ {Col.BOLD}MISSION COMPLETE{Col.RESET}")
+    print(f"📊 {Col.BOLD}WORKING STREAMS:{Col.RESET} {len(valid_streams)} / {total}")
+    print(f"⏱️ {Col.BOLD}TIME:{Col.RESET} {time.time()-start_time:.2f}s")
+    print(f"📺 Playlist: {PLAYLIST_FILE}")
+    print(f"{Col.CYAN}{'='*60}{Col.RESET}")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
