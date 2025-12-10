@@ -1,11 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765316728&token=2a88550bc419136595b7234a8b4fc8a70601fc320c3b1c4a72270b9038444400
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765316435&token=540a5d6f9b490033ff17d47cdb69bbcf4b255d2219e8dabfb019cb7a128aa771
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765344556&token=72aaa6cada4ad5b611254e3743aac7b9fcdbd8a181e11c81ecd15bd618f9eee3
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765329176&token=4a9d867a3766555a93ce6f50d4a1be8aa731c8fe3cbbe7b2c7008ba2052cc3cb
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Miami Heat  vs  Orlando Magic" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Miami Heat  vs  Orlando Magic
-https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765316476&token=a9a0047a59d1c7649199f4139b0e597ac6b2a72544fa5591ca71e0d76ec6574b
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765317095&token=63afe509d20869d8fbddbd9ea7cf574eda6c7d343251a5421b77ce719df9d04d
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="MLB Draft Lottery" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",MLB Draft Lottery
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765321145&token=7d7322b9fa9722fc9c978c6205e652243d1202f3fbf8bb880793fcc84cd55de4
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765321163&token=a378d047de14b97bb89cbb8668f78df15e9935f7722b5c021c8d0f00af9c7950
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="New York Knicks  vs  Toronto Raptors" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New York Knicks  vs  Toronto Raptors
-https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765321714&token=f63b4f75c05dd4a86665c6a08f233ccb2e444e7f533e09b8b79001c2d290bd78
+https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765318785&token=d5875d9528911bdefaae1dff3b476993e295f387d200098d553e13eee3fe59fb
