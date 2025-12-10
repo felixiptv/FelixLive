@@ -415,3 +415,7 @@ https://nl.utako.moe/gingach/index.m3u8
 https://nl.utako.moe/tabi/index.m3u8
 #EXTINF:-1 group-title="JapanTV" tvg-id="v_paradise" tvg-logo="https://www.lyngsat.com/logo/tv/vv/v_paradise_jp.png",V Paradise
 https://nl.utako.moe/v_paradise/index.m3u8
+#EXTINF:-1 group-title="JapanTV" tvg-id="golf_network" tvg-logo="https://www.lyngsat.com/logo/tv/gg/golf-network-jp.png",Golf Network
+https://nl.utako.moe/golf_network/index.m3u8
+#EXTINF:-1 group-title="JapanTV" tvg-id="the_cinema" tvg-logo="https://www.lyngsat.com/logo/tv/tt/the-cinema-jp.png",The Cinema
+https://nl.utako.moe/the_cinema/index.m3u8
