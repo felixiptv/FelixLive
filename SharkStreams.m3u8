@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765316820&token=2ac35448a0e608440c82e6c51fc1eb529e8d08cd7bab14bf2fa501bb25a649a9
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765330367&token=e55fbb68f7bea0ab7a9cb8fd3f28d69056d850390e7b019c6d7d8b0f4334aabd
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
 https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765339613&token=93959146ae2cd9b877151fe3919e040d77767426ec3f1bf9c50ee16b75352a33
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Miami Heat  vs  Orlando Magic" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Miami Heat  vs  Orlando Magic
