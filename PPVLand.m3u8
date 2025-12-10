@@ -474,3 +474,18 @@ https://gg.poocloud.in/ligue1_len/index.m3u8
 #EXTVLCOPT:http-referrer=https://ppv.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/143.0
 https://gg.poocloud.in/ligue1_sbg/index.m3u8
+#EXTINF:-1 tvg-id="ppv-brentfordvsleedsunited" tvg-name="Brentford vs. Leeds United" tvg-logo="https://api.ppv.to/assets/thumb/d1c37c57f2b29a7bc2dd543dac4bea5e-thumbnail.jpg" group-title="PPVLand - Global Football Streams",Brentford vs. Leeds United - 11:30 AM ET / 09:30 AM MT / 16:30 UK
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/143.0
+https://gg.poocloud.in/epl_bre/index.m3u8
+#EXTINF:-1 tvg-id="ppv-bayernvsmainz" tvg-name="Bayern vs. Mainz" tvg-logo="https://api.ppv.to/assets/thumb/d06d2cb98fb36a6dad2f9274cc0958ba-thumbnail.jpg" group-title="PPVLand - Global Football Streams",Bayern vs. Mainz - 11:30 AM ET / 09:30 AM MT / 16:30 UK
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/143.0
+https://gg.poocloud.in/bundesliga_mun/index.m3u8
+#EXTINF:-1 tvg-id="ppv-genoavsinter" tvg-name="Genoa vs. Inter" tvg-logo="https://api.ppv.to/assets/thumb/c2be6b8d212e7e04a16ee1ae6a61b969-thumbnail.jpg" group-title="PPVLand - Global Football Streams",Genoa vs. Inter - 12:00 PM ET / 10:00 AM MT / 17:00 UK
+#EXTVLCOPT:http-origin=https://ppv.to
+#EXTVLCOPT:http-referrer=https://ppv.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/143.0
+https://gg.poocloud.in/seriea_gen/index.m3u8
