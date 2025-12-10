@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import time
 import re
-from typing import List, Dict, Set
+from typing import List, Dict
 
 # -------- CONFIG ----------
 API_URL = "https://api.ppv.to/api/streams"
@@ -104,11 +104,12 @@ async def capture_m3u8(page, iframe_url, max_wait=8.0):
         else:
             await route.continue_()
 
-    page.on("response", lambda resp: nonlocal_set(resp))
-    def nonlocal_set(resp):
+    def handle_response(resp):
         nonlocal found
         if ".m3u8" in resp.url and not found:
             found = resp.url
+
+    page.on("response", handle_response)
 
     await page.route("**/*", route_handler)
     try:
@@ -122,7 +123,7 @@ async def capture_m3u8(page, iframe_url, max_wait=8.0):
         await asyncio.sleep(step)
         waited += step
 
-    page.remove_listener("response", nonlocal_set)
+    page.remove_listener("response", handle_response)
     try:
         await page.unroute("**/*", route_handler)
     except:
@@ -137,11 +138,15 @@ def build_playlist(entries: List[Dict]):
         if key in seen:
             continue
         seen.add(key)
-        tvg_id = f"ppv-{re.sub(r'\\W+', '', e['name']).lower()}"[:64]
+
+        clean_name = re.sub(r'\W+', '', e['name']).lower()
+        tvg_id = f"ppv-{clean_name}"[:64]
+
         logo = e.get("poster") or BACKUP_LOGOS.get(e["category"], BACKUP_LOGOS["default"])
         group = GROUP_RENAME_MAP.get(e["category"], e["category"])
         display = pretty_time(e.get("starts_at"))
         title = f"{e['name']} - {display}" if display else e["name"]
+
         lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{e["name"]}" tvg-logo="{logo}" group-title="{group}",{title}')
         for h in STREAM_HEADERS:
             lines.append(h)
@@ -157,7 +162,6 @@ async def main():
         print("❌ No API data. Exiting.")
         return
 
-    # flatten candidates
     now = int(time.time())
     candidates = []
     for cat in api_streams:
