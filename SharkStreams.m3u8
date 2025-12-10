@@ -1,11 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765402993&token=fd4dab41f6044121cea76eceb6046fb0998acf6b339cdf29c91fe4a407d1c582
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765407661&token=50257476079c5ad9f3d8541a4ee42b5abb4abad1601f109471314c8d26fd9dbc
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765319268&token=9eed6da27d674690345304d1d199655ad521db640477fb8ed6894dbb98083727
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Miami Heat  vs  Orlando Magic" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Miami Heat  vs  Orlando Magic
-https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765405667&token=1ea9c35c0a078037d834e90f18e6392eb2bafc1671d75fbc9d356788f0f391f6
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="MLB Draft Lottery" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",MLB Draft Lottery
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765319270&token=8dc026c3ce772193d687b188b573fa5577a59937e69f2b8bafe948e5c5f22a8a
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="New York Knicks  vs  Toronto Raptors" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New York Knicks  vs  Toronto Raptors
-https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765319276&token=396ccccbb9ab7ca53c899c41456ffdd846aa3a26cd6dbff41b747318fa610a65
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765409099&token=4800467574ff27f3ee848a26d601399371a184f7d05dafeeab028c4e1d2502dd
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder (Dec 10 - 07:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Oklahoma City Thunder (Dec 10 - 07:30 PM ET)
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765409120&token=ae6f2ffc0be31e12ec80742e29ea9dd3853f71bc33b8b166814a592025aa7405
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Los Angeles Lakers (Dec 10 - 10:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Los Angeles Lakers (Dec 10 - 10:00 PM ET)
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765407110&token=2d21b8076318b6b85c65e4ac2545ebdb9909c6da1947d35f8eb2284cef356603
