@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """
-PPV.TO Hybrid Interceptor — High-Capture Mode
+PPV.TO HIGH-CAPTURE MODE — FINALIZED
 
-Changes from original Balanced script:
- - Longer waits for .m3u8 URLs (up to 8s)
- - Polls page for URL like sequential script
- - Skips strict validation (accepts first captured URL)
- - Simplified Playwright interactions
- - Limited concurrency to avoid missed responses
+- Initial capture (fast, MAX_WAIT_INITIAL=8s)
+- Retry missing streams with longer wait (MAX_WAIT_RETRY=15s)
+- Safe f-string handling (backslash issue fixed)
+- Builds full M3U8 playlist
 """
 import asyncio
 from playwright.async_api import async_playwright
@@ -23,8 +21,10 @@ API_URL = "https://api.ppv.to/api/streams"
 PLAYLIST_FILE = "PPVLand.m3u8"
 HEADLESS = True
 
-# concurrency tuning
-CAPTURE_CONCURRENCY = 3   # keep small for reliability
+CAPTURE_CONCURRENCY = 3
+MAX_WAIT_INITIAL = 8.0
+MAX_WAIT_RETRY = 15.0
+RETRY_CONCURRENCY = 2
 
 STREAM_HEADERS = [
     '#EXTVLCOPT:http-origin=https://ppv.to',
@@ -94,8 +94,7 @@ async def fetch_api_streams():
         print("❌ API fetch error:", e)
         return []
 
-async def capture_m3u8(page, iframe_url, max_wait=8.0):
-    """Capture the first .m3u8 from iframe, polling for slower streams"""
+async def capture_m3u8(page, iframe_url, max_wait=MAX_WAIT_INITIAL):
     found = None
 
     async def route_handler(route):
@@ -110,8 +109,8 @@ async def capture_m3u8(page, iframe_url, max_wait=8.0):
             found = resp.url
 
     page.on("response", handle_response)
-
     await page.route("**/*", route_handler)
+
     try:
         await page.goto(iframe_url, timeout=15000, wait_until="domcontentloaded")
     except:
@@ -155,7 +154,7 @@ def build_playlist(entries: List[Dict]):
 
 async def main():
     t0 = time.time()
-    print("\n=== PPV.TO HIGH-CAPTURE MODE ===\n")
+    print("\n=== PPV.TO HIGH-CAPTURE MODE — FINALIZED ===\n")
 
     api_streams = await fetch_api_streams()
     if not api_streams:
@@ -185,19 +184,44 @@ async def main():
 
         cap_sem = asyncio.Semaphore(CAPTURE_CONCURRENCY)
         results = []
+        failed = []
 
-        async def worker(item):
+        async def worker(item, wait_time=MAX_WAIT_INITIAL):
             async with cap_sem:
                 page = await context.new_page()
-                url = await capture_m3u8(page, item["iframe"], max_wait=8)
+                url = await capture_m3u8(page, item["iframe"], max_wait=wait_time)
                 await page.close()
                 if url:
-                    print(f"✔ Captured: {item['name']}")
                     results.append({**item, "url": url})
+                    print(f"✔ Captured: {item['name']}")
                 else:
+                    failed.append(item)
                     print(f"✖ Failed: {item['name']}")
 
+        # --- Initial capture ---
         await asyncio.gather(*(worker(it) for it in candidates))
+
+        print(f"\n⚡ Initial capture complete. Found {len(results)} streams.")
+        print(f"⏱ {len(failed)} streams failed, retrying with longer wait...\n")
+
+        # --- Retry failed streams ---
+        retry_sem = asyncio.Semaphore(RETRY_CONCURRENCY)
+        retry_results = []
+
+        async def retry_worker(item):
+            async with retry_sem:
+                page = await context.new_page()
+                url = await capture_m3u8(page, item["iframe"], max_wait=MAX_WAIT_RETRY)
+                await page.close()
+                if url:
+                    retry_results.append({**item, "url": url})
+                    print(f"✔ Retry success: {item['name']}")
+                else:
+                    print(f"✖ Retry failed: {item['name']}")
+
+        await asyncio.gather(*(retry_worker(it) for it in failed))
+
+        results.extend(retry_results)
         await browser.close()
 
     playlist = build_playlist(results)
@@ -205,7 +229,7 @@ async def main():
         fh.write(playlist)
 
     print("\n✅ Done.")
-    print(f"Streams written: {len(results)}")
+    print(f"Streams captured: {len(results)} / {len(candidates)}")
     print(f"Playlist: {PLAYLIST_FILE}")
     print(f"Elapsed: {time.time()-t0:.2f}s\n")
 
