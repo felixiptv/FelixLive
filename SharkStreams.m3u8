@@ -1,9 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765406704&token=1278df820db1965ae1b260e63955c4a1cfcc592cbe90fb5800b4ec2c335c4ebf
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765406591&token=6731b25194ad44d562262a5effe4650b85d68c41e05830c2bfff8aa8b09e5b70
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765428216&token=31e659919cd34ec7113c2bb7228959dd41e129989469595c0cbab0ab3fca076d
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765422355&token=0743ccabc4c8d73a55988a4da5840a7a7ccae427a7ab0c770ad1333a9e421acf
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Oklahoma City Thunder
-https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765407881&token=e1df818e96480c7183a727ca23d6e131c5d5da41d09193dd138db75318757890
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765407065&token=d14f8e79b3a132598d0e09c97ea9889c19289f247c634a5e016c3330c5c6d87f
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Los Angeles Lakers
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765408277&token=24e535fc8798804ca720dce2b8331ee7be32df0de7773d5e229042b71a1bec38
+https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765406857&token=5c784c0d55301aa4ff367f7ac2546cf5f490d3371f5ea9cce9e2ab1ef64b880e
