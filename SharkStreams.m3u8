@@ -1,15 +1,15 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765469443&token=d61f274cc3c010cf1858585d6852d19082926d3053f7c924b87b006a5ce9b203
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765469257&token=91a1c2558bca24cdede1394bc9b9f5350a56d1596a1423a4abf782d61c2777dd
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765470779&token=8dded22287314fb2a0f751bf8cc6bc4dd120dd42b033e993cb8335753b5872b0
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765474450&token=8c2add6203942407e48f6437d7f5950bf8469dbf1390ef8fc60f2d3d8ef3679f
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Houston Rockets (Dec 11 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Houston Rockets (Dec 11 - 08:00 PM ET)
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765470781&token=bc7ab373a56ca84d3700ea34d0dc01c611a7ccf2b76cc520c6df910eabaa4bd5
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765474452&token=aa326d577f33751c6a8a2c69f92d56474cab7050ad65a0557a5962bb1b9110de
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Boston Celtics vs Milwaukee Bucks (Dec 11 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Boston Celtics vs Milwaukee Bucks (Dec 11 - 08:00 PM ET)
-https://cdn4.dtplumber.cfd/live/cdn4/playlist.m3u8?expires=1765470783&token=a402b162a11813d564dc79befe6549f1e17217b82ea06f0f0d84bc97ab9eb68d
+https://cdn4.dtplumber.cfd/live/cdn4/playlist.m3u8?expires=1765474457&token=e1b7acccd653becfad641b004c7d5e1183ebead47d86e6b68eaf01797b8be3e9
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Portland Trail Blazers vs New Orleans Pelicans (Dec 11 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Portland Trail Blazers vs New Orleans Pelicans (Dec 11 - 08:00 PM ET)
-https://cdn5.dtplumber.cfd/live/cdn5/playlist.m3u8?expires=1765470789&token=dffa7cc75dbc522e8aa0d1a34d81d03950c9ba9f8a05d34465dcc8a3fa78efdb
+https://cdn5.dtplumber.cfd/live/cdn5/playlist.m3u8?expires=1765474462&token=ac330819b1db8cb929e16ea64bbd4c2aaaa8888befe7995c2cf6a1027cc13450
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Atlanta Falcons vs Tampa Bay Buccaneers (Dec 11 - 08:18 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Atlanta Falcons vs Tampa Bay Buccaneers (Dec 11 - 08:18 PM ET)
-https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765470795&token=db9e26376b6a6d7feab912a4e55ddba007c6d32a2879eaa20073c7c5c9f35fb6
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765474467&token=8fc5364faa2b36eaa0aea2e5cfa743131c41381a6ef35de1dbcd840ae6f1e44c
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Denver Nuggets vs Sacramento Kings (Dec 11 - 10:10 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Denver Nuggets vs Sacramento Kings (Dec 11 - 10:10 PM ET)
-https://cdn10.dtplumber.cfd/live/cdn10/playlist.m3u8?expires=1765470800&token=f37e7e5bbc0b0252d272d64cc737a3e1f71313a2004588b69c59468d53a091cd
+https://cdn10.dtplumber.cfd/live/cdn10/playlist.m3u8?expires=1765474473&token=45c22a76cd5d238fc46b89760742b2829e97dfe920e41319a0ed3c09cb8896e1
