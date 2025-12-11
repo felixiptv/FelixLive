@@ -1,7 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765469443&token=d61f274cc3c010cf1858585d6852d19082926d3053f7c924b87b006a5ce9b203
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765469257&token=91a1c2558bca24cdede1394bc9b9f5350a56d1596a1423a4abf782d61c2777dd
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765470779&token=8dded22287314fb2a0f751bf8cc6bc4dd120dd42b033e993cb8335753b5872b0
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Houston Rockets (Dec 11 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Houston Rockets (Dec 11 - 08:00 PM ET)
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765470781&token=bc7ab373a56ca84d3700ea34d0dc01c611a7ccf2b76cc520c6df910eabaa4bd5
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765474450&token=8c2add6203942407e48f6437d7f5950bf8469dbf1390ef8fc60f2d3d8ef3679f
