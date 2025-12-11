@@ -3,7 +3,7 @@
 https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765407661&token=50257476079c5ad9f3d8541a4ee42b5abb4abad1601f109471314c8d26fd9dbc
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
 https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765409099&token=4800467574ff27f3ee848a26d601399371a184f7d05dafeeab028c4e1d2502dd
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder (Dec 10 - 07:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Oklahoma City Thunder (Dec 10 - 07:30 PM ET)
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Oklahoma City Thunder
 https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765409120&token=ae6f2ffc0be31e12ec80742e29ea9dd3853f71bc33b8b166814a592025aa7405
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Los Angeles Lakers (Dec 10 - 10:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Los Angeles Lakers (Dec 10 - 10:00 PM ET)
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765407110&token=2d21b8076318b6b85c65e4ac2545ebdb9909c6da1947d35f8eb2284cef356603
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Los Angeles Lakers
+https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765407110&token=6648e1d2b5a0c30862c61779f2246bd75cc9f8cd9aaa509b018321f579f954af
