@@ -1,9 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765407739&token=8db94fbfab7468df2c6fc1ed2b1ec5704a3fb11046de89747e4519a3815e59bc
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765469443&token=d61f274cc3c010cf1858585d6852d19082926d3053f7c924b87b006a5ce9b203
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765426131&token=7fbffbe2aef254f9ed93c85dfee559605022d55fc9376db45eef6bdd072c0b34
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Phoenix Suns vs Oklahoma City Thunder
-https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765408135&token=af9272b0134862947c4f84bdd8bab5b28f825d46556bd8978c52e40a2499835a
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Los Angeles Lakers
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765412520&token=d9a19b78b25f51103cb5e76503cdd652925853f185948e002b2646d87322bda5
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765470779&token=8dded22287314fb2a0f751bf8cc6bc4dd120dd42b033e993cb8335753b5872b0
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Houston Rockets (Dec 11 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Houston Rockets (Dec 11 - 08:00 PM ET)
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765470781&token=bc7ab373a56ca84d3700ea34d0dc01c611a7ccf2b76cc520c6df910eabaa4bd5
