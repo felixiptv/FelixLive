@@ -1,5 +1,15 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765494880&token=1b25229736dfa55863082f0d364629f2d4e5678dbc5792f38b9729f20c3eec7a
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765497528&token=193b528b4613d1886c1c6bf0f84688dd09c2701a1deecd484efa335fd71b289d
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765495640&token=60d0ec38d5286831f20ffacf813146d1e8abf87186301a9325fcf387d4da17d3
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765501961&token=cd2d5d1d60b6e05be90b7ae9cf144ab27dd24eda7e87afbe5026f4b7cf8807d4
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Houston Rockets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Houston Rockets
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765495850&token=f274fc7e26cc3b918cca727ece8796f6554f485629f298a85dfd368b67067ade
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Boston Celtics vs Milwaukee Bucks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Boston Celtics vs Milwaukee Bucks
+https://cdn4.dtplumber.cfd/live/cdn4/playlist.m3u8?expires=1765497516&token=d2d1bf285903faa58f7dce14b3fcfe15823214f461b562159f202d25fc584407
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Portland Trail Blazers vs New Orleans Pelicans" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Portland Trail Blazers vs New Orleans Pelicans
+https://cdn5.dtplumber.cfd/live/cdn5/playlist.m3u8?expires=1765495974&token=a2d81f8ab8993bc892a775d5db606eda76fda600bea88a99946fb2a866490920
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Atlanta Falcons vs Tampa Bay Buccaneers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Atlanta Falcons vs Tampa Bay Buccaneers
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765495257&token=5b8cd365f75d99f014542bf98504af3c9025fbdf93ab0d862f644be1d1143685
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Denver Nuggets vs Sacramento Kings" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Denver Nuggets vs Sacramento Kings
+https://cdn10.dtplumber.cfd/live/cdn10/playlist.m3u8?expires=1765501788&token=40f2a66ed3a1f0750a4f8efd9e062a6db307e24a10e4276e47b8945dcc0c2b8c
