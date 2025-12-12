@@ -1,15 +1,15 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765512235&token=dad4bc26162e04ea8ac2b32de89790b5123f105ac916b3d25bab6dec0bfd96cb
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765512222&token=6e2062a4bd2247afde7b105c6c0824ff0de78f3ab09f1f5274b48a69e77c2739
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765515579&token=73ec49550eaf4f716530756aaf7b05e15cd80433ea4846a52372cdf37c506169
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765524685&token=079323cab325a4532c35b2058fcc0fa80f4ab932060575fa6ac809a701f4f753
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Los Angeles Clippers vs Houston Rockets" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Los Angeles Clippers vs Houston Rockets
-https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765512209&token=f5035c72455393ce9c0a4e22f8b209917d4d52be7feaa6ba173d616df816420d
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765512164&token=36410f4dddaa42204e4ab0a6ec519c8c7b4da8ec1805c0ce3c45eef200adf353
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Boston Celtics vs Milwaukee Bucks" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Boston Celtics vs Milwaukee Bucks
-https://cdn4.dtplumber.cfd/live/cdn4/playlist.m3u8?expires=1765512204&token=915da8116e743be66c12c8386ef20fd575f490417d347d1ac7144b217a30ec6e
+https://cdn4.dtplumber.cfd/live/cdn4/playlist.m3u8?expires=1765512142&token=82a63ba1f31938cc424ba3717027f307b96047ed9cd31452f44fa0dee56ff705
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Portland Trail Blazers vs New Orleans Pelicans" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Portland Trail Blazers vs New Orleans Pelicans
-https://cdn5.dtplumber.cfd/live/cdn5/playlist.m3u8?expires=1765512343&token=ccd5ca7134333394d978d6907e4d337ab9f4d653bb7b1b18b9f867ee98caa518
+https://cdn5.dtplumber.cfd/live/cdn5/playlist.m3u8?expires=1765512153&token=fce011368cb96fd1b78642d63689e93a116fafbe216c568e84408ee3486ace0d
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="Atlanta Falcons vs Tampa Bay Buccaneers" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",Atlanta Falcons vs Tampa Bay Buccaneers
-https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765512141&token=6ef11586714dc2fa1dd76a242ebc76fa6bd05e0cffab3e6825c3abcac010cfb4
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765512143&token=26cb514f6981c916ba58175f7f3bf8776b9b4d13a165050c16d88eaddbc9e495
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Denver Nuggets vs Sacramento Kings" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Denver Nuggets vs Sacramento Kings
 https://cdn6.dtplumber.cfd/live/cdn6/playlist.m3u8?expires=1765512143&token=de1f6f595f344914e13453d45adc13c580d6f0f2f570bfdf767853558c547999
