@@ -7,5 +7,15 @@ https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765578432&token=d4854c
 https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765577818&token=a88914f3828d65d59a16337c41c5a2733ff766c3fb2cb3f35e33f5173c463efe
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Atlanta Hawks vs Detroit Pistons (Dec 12 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Atlanta Hawks vs Detroit Pistons (Dec 12 - 07:00 PM ET)
 https://cdn2.dtplumber.cfd/live/cdn2/playlist.m3u8?expires=1765577595&token=823f33c33b2fd9fc75dcf480144b03e7ced3caa82b6e390bcb9ed84bc2ea3fd1
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Indiana Pacers vs Philadelphia 76ers (Dec 12 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Indiana Pacers vs Philadelphia 76ers (Dec 12 - 07:00 PM ET)
+https://cdn3.dtplumber.cfd/live/cdn3/playlist.m3u8?expires=1765578436&token=052a742738b0129b3e66c40f098acadda0d686fbeca09a531acd2fcf667abbe6
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Cleveland Cavaliers vs Washington Wizards (Dec 12 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Cleveland Cavaliers vs Washington Wizards (Dec 12 - 07:00 PM ET)
 https://cdn4.dtplumber.cfd/live/cdn4/playlist.m3u8?expires=1765577814&token=47ffacdf95adfdb69c9a7adb1655385194b2b1916127e0c0a2d6811ce65975ac
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Utah Jazz vs Memphis Grizzlies (Dec 12 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Utah Jazz vs Memphis Grizzlies (Dec 12 - 08:00 PM ET)
+https://cdn5.dtplumber.cfd/live/cdn5/playlist.m3u8?expires=1765578443&token=4b7db5af214a227dd5ecbe1afe7ba149d3f67b3ae4d330fe03335d0c701ee65a
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Erik Miloc vs. Nahuel Garc1a (Dec 12 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Erik Miloc vs. Nahuel Garc1a (Dec 12 - 08:00 PM ET)
+https://cdn8.dtplumber.cfd/live/cdn8/playlist.m3u8?expires=1765578447&token=0eade96122b9b0da1c27da66b37e4a56bc551191d394b9668880fa64adc87a94
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Brooklyn Nets vs Dallas Mavericks (Dec 12 - 08:30 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Brooklyn Nets vs Dallas Mavericks (Dec 12 - 08:30 PM ET)
+https://cdn6.dtplumber.cfd/live/cdn6/playlist.m3u8?expires=1765578453&token=83f93ee5f4d4d2da6c0ca8f02f4729db1b7927994d0ba5053a9f1e25afb39685
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="Minnesota Timberwolves vs Golden State Warriors (Dec 12 - 10:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Minnesota Timberwolves vs Golden State Warriors (Dec 12 - 10:00 PM ET)
+https://cdn7.dtplumber.cfd/live/cdn7/playlist.m3u8?expires=1765578459&token=1a9c6cc81744fd5f790e13108e0201b786176ab8f914adceda4de0190e29c116
