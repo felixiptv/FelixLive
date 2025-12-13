@@ -56,20 +56,24 @@ GROUP_RENAME_MAP = {
     "Combat Sports": "PPVLand - Combat Sports",
     "Darts": "PPVLand - Darts",
     "Motorsports": "PPVLand - Racing Action",
-    "Live Now": "PPVLand - Live Now",
     "Ice Hockey": "PPVLand - NHL Action",
     "Cricket": "PPVLand - Cricket"
 }
 
-ICONS = {
-    "American Football": "🏈", "Basketball": "🏀", "Ice Hockey": "🏒",
-    "Baseball": "⚾", "Combat Sports": "🥊", "Wrestling": "🤼",
-    "Football": "⚽", "Motorsports": "🏎️", "Darts": "🎯",
-    "Live Now": "📡", "24/7 Streams": "📺", "default": "📺"
+# 🟢 SPORT-SPECIFIC LIVE EMOJIS
+LIVE_EMOJI_MAP = {
+    "Basketball": "🏀",
+    "Wrestling": "🤼",
+    "Combat Sports": "🥊",
+    "American Football": "🏈",
+    "Football": "⚽",
+    "Baseball": "⚾",
+    "Ice Hockey": "🏒",
+    "Motorsports": "🏎️",
+    "Cricket": "🏏",
+    "Darts": "🎯",
+    "24/7 Streams": "📺",
 }
-
-def get_icon(name):
-    return ICONS.get(name, ICONS["default"])
 
 def get_display_time(timestamp):
     if not timestamp or timestamp <= 0:
@@ -147,13 +151,11 @@ async def main():
     # flatten
     for cat_obj in categories:
         original_cat = cat_obj.get("category", "")
-        cat_always_live = cat_obj.get("always_live") == 1
 
         for s in cat_obj.get("streams", []):
             starts_at = s.get("starts_at", 0)
-            stream_always_live = s.get("always_live") == 1
 
-            # 🔒 LOCK CATEGORY — NEVER OVERRIDE
+            # 🔒 CATEGORY NEVER CHANGES
             final_category = original_cat
 
             if s.get("iframe"):
@@ -178,8 +180,7 @@ async def main():
         for idx, s in enumerate(streams, start=1):
             page = await browser.new_page()
 
-            icon = get_icon(s["category"])
-            print(f"[{idx}/{total}] {Col.YELLOW}Scanning:{Col.RESET} {icon} {s['name']} [{s['category']}]")
+            print(f"[{idx}/{total}] {Col.YELLOW}Scanning:{Col.RESET} {s['name']} [{s['category']}]")
 
             urls = await safe_grab(page, s["iframe"])
             await page.close()
@@ -209,11 +210,27 @@ async def main():
     print(f"\n{Col.YELLOW}💾 Saving playlist to {PLAYLIST_FILE}...{Col.RESET}")
     with open(PLAYLIST_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
+        now_ts = int(time.time())
+
         for item in valid_streams:
             tvg_id = f"ppv-{item['id']}"
             group_title = GROUP_RENAME_MAP.get(item["category"], item["category"])
 
             clean_title = item["name"]
+
+            starts_at = item.get("starts_at") or 0
+            ends_at = item.get("ends_at") or 0
+
+            is_live = (
+                starts_at > 0
+                and starts_at <= now_ts
+                and (ends_at == 0 or now_ts < ends_at)
+            )
+
+            if is_live:
+                emoji = LIVE_EMOJI_MAP.get(item["category"], "🟢")
+                clean_title = f"{emoji} LIVE {clean_title}"
+
             if item["time"]:
                 clean_title += f" - {item['time']}"
 
@@ -233,8 +250,6 @@ async def main():
     print(f"⏱️ {Col.BOLD}TIME:{Col.RESET} {time.time()-start_time:.2f}s")
     print(f"📺 Playlist: {PLAYLIST_FILE}")
     print(f"{Col.CYAN}{'='*60}{Col.RESET}")
-
-
 
 if __name__ == "__main__":
     asyncio.run(main())
