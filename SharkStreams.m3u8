@@ -1,5 +1,17 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
-https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765653362&token=7b173510c976cb67dd1a6fe7375efc2c041285ea756d85993f2af8f5400e4668
+https://cdn1.dbfile.cfd/live/cdn1/playlist.m3u8?expires=1765653201&token=b5b06a673cc42b01456fdd414194ac213c9d60b1a70cd2f070179e1375daff29
 #EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE MONDAY NIGHT RAW" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE MONDAY NIGHT RAW
-https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765653830&token=988f12bcacac88d5bf9709483cf33fb48c71712665294ed2e14a8b0f9fc6f43b
+https://cdn7.stcloud.xyz/live/cdn7/playlist.m3u8?expires=1765657645&token=d1b17c08545aedde39d1daed728c5c94773bc4cf673ffd20dcd332336d9e3780
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="BKFC:Conor Cooke vs Anthony Holmes (Dec 13 - 03:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",BKFC:Conor Cooke vs Anthony Holmes (Dec 13 - 03:00 PM ET)
+https://cdn7.dtplumber.cfd/live/cdn7/playlist.m3u8?expires=1765653065&token=941a54aa5f6bb77c8aed1fb70bae3b8fc982ed6859a90713a48a5e408854ef06
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="UFC Fight Night:Brandon Royval vs Manel Kape (Dec 13 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - UFC",UFC Fight Night:Brandon Royval vs Manel Kape (Dec 13 - 07:00 PM ET)
+https://cdn1.dtplumber.cfd/live/cdn1/playlist.m3u8?expires=1765654911&token=e9b4568d12960fb783c866aad27d6ac2208daf660da58fec5f1448568af6e1c3
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Badou Jack vs Norair Mikaeljan (Dec 13 - 07:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Badou Jack vs Norair Mikaeljan (Dec 13 - 07:00 PM ET)
+https://cdn8.dtplumber.cfd/live/cdn8/playlist.m3u8?expires=1765654909&token=6981f7272b5a6a376d78a8ba7a546c43cc9867d871af3c3fc2f52929e89b1a93
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="Diego Pacheco vs Kvin Lele Sadjo (Dec 13 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - Boxing",Diego Pacheco vs Kvin Lele Sadjo (Dec 13 - 08:00 PM ET)
+https://cdn9.dtplumber.cfd/live/cdn9/playlist.m3u8?expires=1765654918&token=65fceba39300725ef0f2ce05ca434c86809de8cceb7e030e1f77a7fc7752b123
+#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-name="WWE Saturday Night Main Event (Dec 13 - 08:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Combat-Sports.png" group-title="SharkStreams - WWE",WWE Saturday Night Main Event (Dec 13 - 08:00 PM ET)
+https://cdn10.dtplumber.cfd/live/cdn10/playlist.m3u8?expires=1765654155&token=38725cb305992cf9b8fca6ae0d0dc37cb9aa2a0bb07325e33a87b84d14855ccc
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="San Antonio Spurs vs Oklahoma City Thunder (Dec 13 - 09:00 PM ET)" tvg-logo="http://drewlive24.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",San Antonio Spurs vs Oklahoma City Thunder (Dec 13 - 09:00 PM ET)
+https://cdn6.dtplumber.cfd/live/cdn6/playlist.m3u8?expires=1765654910&token=cd29f4f181765c252f493f693497298ab32b57207ea520e36166ae737a160f3a
