@@ -151,12 +151,10 @@ async def main():
 
         for s in cat_obj.get("streams", []):
             starts_at = s.get("starts_at", 0)
-            is_live_event = (starts_at > 0 and starts_at <= now_ts)
             stream_always_live = s.get("always_live") == 1
 
+            # 🔒 LOCK CATEGORY — NEVER OVERRIDE
             final_category = original_cat
-            if not cat_always_live and not stream_always_live and is_live_event:
-                final_category = "Live Now"
 
             if s.get("iframe"):
                 streams.append({
@@ -235,6 +233,7 @@ async def main():
     print(f"⏱️ {Col.BOLD}TIME:{Col.RESET} {time.time()-start_time:.2f}s")
     print(f"📺 Playlist: {PLAYLIST_FILE}")
     print(f"{Col.CYAN}{'='*60}{Col.RESET}")
+
 
 
 if __name__ == "__main__":
